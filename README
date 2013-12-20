@@ -1,0 +1,24 @@
+ToucnNVote is an Google App Engine(GAE) connected android project.
+
+Use: 
+	This app makes single Master to add his dependents who can vote for the question posted by the master.
+	Basically developed to conduct poll between professor and their student in the class.
+	
+Application structure & functions:
+	Has two type of users:
+		Professor (Master)
+		Students (Dependents)
+	Functions under professor:
+		Can add a new class. say Fall 2013 Time:7:00PM as his class
+		Can add student to the class. Here since this application is developed for the UTA students mainly, the domain for netid is of format abc1234
+		Can add a poll to class
+		Can post questions to poll added
+		Can view the result of poll conducted
+	Functions under students:
+		Can create a new account if their professor has added them as their dependent
+		Can update their password at anytime answering security questions they provided during registration
+		Can log in to find any poll posted
+		Can take the poll and submit their response
+		
+Server side of this is deployed in my google app engine console.
+Client side is an android application which can be installed using apk attached		

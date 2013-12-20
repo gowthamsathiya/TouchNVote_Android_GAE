@@ -1,0 +1,194 @@
+{
+  "extends" : "thirdParty.api",
+  "abstract" : false,
+  "root" : "https://touchnvote.appspot.com/_ah/api",
+  "name" : "userdetailslistendpoint",
+  "version" : "v1",
+  "defaultVersion" : false,
+  "adapter" : {
+    "bns" : "https://touchnvote.appspot.com/_ah/spi",
+    "deadline" : 10.0,
+    "type" : "lily"
+  },
+  "auth" : {
+    "allowCookieAuth" : false
+  },
+  "frontendLimits" : {
+    "unregisteredUserQps" : -1,
+    "unregisteredQps" : -1,
+    "unregisteredDaily" : -1,
+    "rules" : [ ]
+  },
+  "cacheControl" : {
+    "type" : "no-cache",
+    "maxAge" : 0
+  },
+  "ownerDomain" : "touchnvoteui.com",
+  "ownerName" : "touchnvoteui.com",
+  "packagePath" : "entities",
+  "methods" : {
+    "userdetailslistendpoint.getUserDetailsList" : {
+      "path" : "userdetailslist/{id}",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.touchnvoteui.entities.UserDetailsListEndpoint.getUserDetailsList",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "int64",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "userdetailslistendpoint.listUserDetailsList" : {
+      "path" : "userdetailslist",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.touchnvoteui.entities.UserDetailsListEndpoint.listUserDetailsList",
+      "request" : {
+        "parameters" : {
+          "cursor" : {
+            "type" : "string",
+            "required" : false
+          },
+          "limit" : {
+            "type" : "int32",
+            "required" : false
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "userdetailslistendpoint.updateUserDetailsList" : {
+      "path" : "userdetailslist",
+      "httpMethod" : "PUT",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.touchnvoteui.entities.UserDetailsListEndpoint.updateUserDetailsList",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "userdetailslistendpoint.insertUserDetailsList" : {
+      "path" : "userdetailslist",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.touchnvoteui.entities.UserDetailsListEndpoint.insertUserDetailsList",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "userdetailslistendpoint.removeUserDetailsList" : {
+      "path" : "userdetailslist/{id}",
+      "httpMethod" : "DELETE",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.touchnvoteui.entities.UserDetailsListEndpoint.removeUserDetailsList",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "int64",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "empty"
+      }
+    }
+  },
+  "descriptor" : {
+    "schemas" : {
+      "UserDetailsList" : {
+        "id" : "UserDetailsList",
+        "type" : "object",
+        "properties" : {
+          "key" : {
+            "$ref" : "Key"
+          }
+        }
+      },
+      "Key" : {
+        "id" : "Key",
+        "type" : "object",
+        "properties" : {
+        }
+      },
+      "CollectionResponse_UserDetailsList" : {
+        "id" : "CollectionResponse_UserDetailsList",
+        "type" : "object",
+        "properties" : {
+          "items" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "UserDetailsList"
+            }
+          },
+          "nextPageToken" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "methods" : {
+      "com.touchnvoteui.entities.UserDetailsListEndpoint.getUserDetailsList" : {
+        "response" : {
+          "$ref" : "UserDetailsList"
+        }
+      },
+      "com.touchnvoteui.entities.UserDetailsListEndpoint.listUserDetailsList" : {
+        "response" : {
+          "$ref" : "CollectionResponse_UserDetailsList"
+        }
+      },
+      "com.touchnvoteui.entities.UserDetailsListEndpoint.updateUserDetailsList" : {
+        "request" : {
+          "$ref" : "UserDetailsList"
+        },
+        "response" : {
+          "$ref" : "UserDetailsList"
+        }
+      },
+      "com.touchnvoteui.entities.UserDetailsListEndpoint.insertUserDetailsList" : {
+        "request" : {
+          "$ref" : "UserDetailsList"
+        },
+        "response" : {
+          "$ref" : "UserDetailsList"
+        }
+      },
+      "com.touchnvoteui.entities.UserDetailsListEndpoint.removeUserDetailsList" : {
+      }
+    }
+  }
+}

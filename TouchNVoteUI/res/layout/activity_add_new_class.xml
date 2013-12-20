@@ -1,0 +1,137 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true" 
+>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="474dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/classEndDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/classStartDateTxtView"
+        android:layout_alignRight="@+id/classStartDateTxtView"
+        android:layout_below="@+id/classStartDateTxtView"
+        android:layout_marginTop="30dp"
+        android:text="@string/classenddate" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/classEndDateTextView"
+        android:layout_below="@+id/classEndDateTextView"
+        android:layout_marginTop="32dp"
+        android:text="@string/time" />
+
+    <TextView
+        android:id="@+id/classStartDateTxtView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seasonTextView"
+        android:layout_marginTop="34dp"
+        android:text="@string/classstartdate" />
+
+    <TextView
+        android:id="@+id/seasonTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/classStartDateTxtView"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:text="@string/season" />
+
+    <EditText
+        android:id="@+id/sDteEditText"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/classStartDateTxtView"
+        android:layout_alignBottom="@+id/classStartDateTxtView"
+        android:layout_alignLeft="@+id/addNewClassButton"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2" />
+
+    <EditText
+        android:id="@+id/sYearEditText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sDteEditText"
+        android:layout_alignBottom="@+id/sDteEditText"
+        android:layout_toRightOf="@+id/sMonthSpinner"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="4" />
+
+    <EditText
+        android:id="@+id/eDteEditText"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/classEndDateTextView"
+        android:layout_alignBottom="@+id/classEndDateTextView"
+        android:layout_alignLeft="@+id/sDteEditText"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/eYearEditText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eDteEditText"
+        android:layout_alignBottom="@+id/eDteEditText"
+        android:layout_toRightOf="@+id/eMonthSpinner"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="4" />
+
+    <Spinner
+        android:id="@+id/seasonClassSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seasonTextView"
+        android:layout_alignLeft="@+id/sDteEditText"
+        android:entries="@array/season" />
+
+    <Spinner
+        android:id="@+id/sMonthSpinner"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sDteEditText"
+        android:layout_toRightOf="@+id/sDteEditText"
+        android:entries="@array/monthlist" />
+
+    <Spinner
+        android:id="@+id/eMonthSpinner"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/eDteEditText"
+        android:layout_toRightOf="@+id/eDteEditText"
+        android:entries="@array/monthlist" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/timeTextView"
+        android:layout_toRightOf="@+id/seasonTextView" />
+
+    <Button
+        android:id="@+id/addNewClassButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/classEndDateTextView"
+        android:text="@string/addclass" />
+
+</RelativeLayout>
+</ScrollView>

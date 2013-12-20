@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.touchnvoteui"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/vote"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.touchnvoteui.TNVMainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.touchnvoteui.RegisterActivity"
+            android:label="@string/registration" >
+        </activity>
+        <activity
+            android:name="com.touchnvoteui.ForgotPasswordActivity"
+            android:label="@string/title_activity_forgot_password" >
+        </activity>
+        <activity
+            android:name="com.touchnvoteui.SecurityQuestionActivity"
+            android:label="@string/title_activity_security_question" >
+        </activity>
+        <activity
+            android:name="com.touchnvoteui.PasswordChangeActivity"
+            android:label="@string/title_activity_password_change" >
+        </activity>
+        <activity
+            android:name="com.touchnvoteui.ProfessorMainActivity"
+            android:label="@string/title_activity_professor_main" >
+        </activity>
+        <activity
+            android:name="com.touchnvoteui.AddNewStudentActivity"
+            android:label="@string/title_activity_add_class" >
+        </activity>
+        <activity
+            android:name="com.touchnvoteui.OneStudentEnrollActivity"
+            android:label="@string/title_activity_one_student_enroll" >
+        </activity>
+        <activity
+            android:name="com.touchnvoteui.AddNewClassActivity"
+            android:label="@string/title_activity_add_new_class" >
+        </activity>
+        <activity
+            android:name="com.touchnvoteui.StoreExcelStudents"
+            android:label="@string/title_activity_store_excel_students" >
+        </activity>
+        <activity
+            android:name="com.touchnvoteui.ClassSelectionToPost"
+            android:label="@string/title_activity_post_question" >
+        </activity>
+        <activity
+            android:name="com.touchnvoteui.PostQuizActivity"
+            android:label="@string/title_activity_post_quiz" >
+        </activity>
+        <activity
+            android:name="com.touchnvoteui.PostQuizQuestionActivity"
+            android:label="@string/title_activity_post_quiz_question" >
+        </activity>
+        <activity
+            android:name="com.touchnvoteui.StudentMainActivity"
+            android:label="@string/title_activity_student_main" >
+        </activity>
+        <activity
+            android:name="com.touchnvoteui.CheckForQuizActivity"
+            android:label="@string/title_activity_check_for_quiz" >
+        </activity>
+        <activity
+            android:name="com.touchnvoteui.ResultTitleSelectionActivity"
+            android:label="@string/title_activity_result_title_selection" >
+        </activity>
+        <activity
+            android:name="com.touchnvoteui.DisplayResultActivity"
+            android:label="@string/title_activity_display_result" >
+        </activity>
+        <activity
+            android:name="com.touchnvoteui.ResultPieActivity"
+            android:label="@string/title_activity_result_pie" >
+        </activity>
+    </application>
+
+</manifest>

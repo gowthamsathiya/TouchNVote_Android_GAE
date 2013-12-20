@@ -1,0 +1,354 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="1477dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/question1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="23dp"
+            android:text="TextView" />
+
+        <RadioGroup
+            android:id="@+id/answerRadioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/question1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="22dp" >
+
+            <RadioButton
+                android:id="@+id/answerRadio1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/answerRadio1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/answerRadio1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+            
+            <RadioButton
+                android:id="@+id/answerRadio1_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/answerCheckBox1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/answerRadioGroup1"
+            android:layout_below="@+id/answerRadioGroup1"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/answerCheckBox1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/answerCheckBox1_1"
+            android:layout_below="@+id/answerCheckBox1_1"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/answerCheckBox1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/answerCheckBox1_2"
+            android:layout_below="@+id/answerCheckBox1_2"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/answerCheckBox1_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/answerCheckBox1_3"
+            android:layout_below="@+id/answerCheckBox1_3"
+            android:text="CheckBox" />
+
+        
+        
+        
+        <TextView
+            android:id="@+id/question2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/answerCheckBox1_4"
+            android:layout_marginTop="23dp"
+            android:text="TextView" />
+
+        <RadioGroup
+            android:id="@+id/answerRadioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/question2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="22dp" >
+
+            <RadioButton
+                android:id="@+id/answerRadio2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/answerRadio2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/answerRadio2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+            
+            <RadioButton
+                android:id="@+id/answerRadio2_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/answerCheckBox2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/answerRadioGroup2"
+            android:layout_below="@+id/answerRadioGroup2"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/answerCheckBox2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/answerCheckBox2_1"
+            android:layout_below="@+id/answerCheckBox2_1"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/answerCheckBox2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/answerCheckBox2_2"
+            android:layout_below="@+id/answerCheckBox2_2"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/answerCheckBox2_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/answerCheckBox2_3"
+            android:layout_below="@+id/answerCheckBox2_3"
+            android:text="CheckBox" />
+        
+        
+        
+        
+        <TextView
+            android:id="@+id/question3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/answerCheckBox2_4"
+            android:layout_marginTop="23dp"
+            android:text="TextView" />
+
+        <RadioGroup
+            android:id="@+id/answerRadioGroup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/question3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="22dp" >
+
+            <RadioButton
+                android:id="@+id/answerRadio3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/answerRadio3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/answerRadio3_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+            
+            <RadioButton
+                android:id="@+id/answerRadio3_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/answerCheckBox3_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/answerRadioGroup3"
+            android:layout_below="@+id/answerRadioGroup3"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/answerCheckBox3_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/answerCheckBox3_1"
+            android:layout_below="@+id/answerCheckBox3_1"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/answerCheckBox3_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/answerCheckBox3_2"
+            android:layout_below="@+id/answerCheckBox3_2"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/answerCheckBox3_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/answerCheckBox3_3"
+            android:layout_below="@+id/answerCheckBox3_3"
+            android:text="CheckBox" />
+        
+        
+        
+        <TextView
+            android:id="@+id/question4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/answerCheckBox3_4"
+            android:layout_marginTop="23dp"
+            android:text="TextView" />
+
+        <RadioGroup
+            android:id="@+id/answerRadioGroup4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/question4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="22dp" >
+
+            <RadioButton
+                android:id="@+id/answerRadio4_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/answerRadio4_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/answerRadio4_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+            
+            <RadioButton
+                android:id="@+id/answerRadio4_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/answerCheckBox4_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/answerRadioGroup4"
+            android:layout_below="@+id/answerRadioGroup4"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/answerCheckBox4_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/answerCheckBox4_1"
+            android:layout_below="@+id/answerCheckBox4_1"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/answerCheckBox4_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/answerCheckBox4_2"
+            android:layout_below="@+id/answerCheckBox4_2"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/answerCheckBox4_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/answerCheckBox4_3"
+            android:layout_below="@+id/answerCheckBox4_3"
+            android:text="CheckBox" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noActivityTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="@string/postresponsetitle" />
+
+        <TextView
+            android:id="@+id/noActivityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="@string/noactivity"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/submitQuizAnsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/answerCheckBox4_4"
+            android:layout_marginTop="24dp"
+            android:layout_toRightOf="@+id/answerCheckBox4_4"
+            android:text="@string/submit" />
+
+    </RelativeLayout>
+
+</ScrollView>

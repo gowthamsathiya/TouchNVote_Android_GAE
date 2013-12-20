@@ -1,0 +1,218 @@
+{
+  "extends" : "thirdParty.api",
+  "abstract" : false,
+  "root" : "https://touchnvote.appspot.com/_ah/api",
+  "name" : "securedloginendpoint",
+  "version" : "v1",
+  "defaultVersion" : false,
+  "adapter" : {
+    "bns" : "https://touchnvote.appspot.com/_ah/spi",
+    "deadline" : 10.0,
+    "type" : "lily"
+  },
+  "auth" : {
+    "allowCookieAuth" : false
+  },
+  "frontendLimits" : {
+    "unregisteredUserQps" : -1,
+    "unregisteredQps" : -1,
+    "unregisteredDaily" : -1,
+    "rules" : [ ]
+  },
+  "cacheControl" : {
+    "type" : "no-cache",
+    "maxAge" : 0
+  },
+  "ownerDomain" : "touchnvoteui.com",
+  "ownerName" : "touchnvoteui.com",
+  "packagePath" : "entities",
+  "methods" : {
+    "securedloginendpoint.updateSecuredLogin" : {
+      "path" : "securedlogin",
+      "httpMethod" : "PUT",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.touchnvoteui.entities.SecuredLoginEndpoint.updateSecuredLogin",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "securedloginendpoint.insertSecuredLogin" : {
+      "path" : "securedlogin",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.touchnvoteui.entities.SecuredLoginEndpoint.insertSecuredLogin",
+      "request" : {
+        "body" : "autoTemplate(backendRequest)",
+        "bodyName" : "resource"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "securedloginendpoint.listSecuredLogin" : {
+      "path" : "securedlogin",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.touchnvoteui.entities.SecuredLoginEndpoint.listSecuredLogin",
+      "request" : {
+        "parameters" : {
+          "cursor" : {
+            "type" : "string",
+            "required" : false
+          },
+          "limit" : {
+            "type" : "int32",
+            "required" : false
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "securedloginendpoint.removeSecuredLogin" : {
+      "path" : "securedlogin/{id}",
+      "httpMethod" : "DELETE",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.touchnvoteui.entities.SecuredLoginEndpoint.removeSecuredLogin",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "empty"
+      }
+    },
+    "securedloginendpoint.getSecuredLogin" : {
+      "path" : "securedlogin/{id}",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.touchnvoteui.entities.SecuredLoginEndpoint.getSecuredLogin",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    }
+  },
+  "descriptor" : {
+    "schemas" : {
+      "SecuredLogin" : {
+        "id" : "SecuredLogin",
+        "type" : "object",
+        "properties" : {
+          "firstName" : {
+            "type" : "string"
+          },
+          "lastName" : {
+            "type" : "string"
+          },
+          "netID" : {
+            "type" : "string"
+          },
+          "password" : {
+            "type" : "string"
+          },
+          "securityQuestion1" : {
+            "type" : "string"
+          },
+          "securityQuestion2" : {
+            "type" : "string"
+          },
+          "securityQuestion3" : {
+            "type" : "string"
+          },
+          "securityQuestionAnswer1" : {
+            "type" : "string"
+          },
+          "securityQuestionAnswer2" : {
+            "type" : "string"
+          },
+          "securityQuestionAnswer3" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "integer"
+          }
+        }
+      },
+      "CollectionResponse_SecuredLogin" : {
+        "id" : "CollectionResponse_SecuredLogin",
+        "type" : "object",
+        "properties" : {
+          "items" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "SecuredLogin"
+            }
+          },
+          "nextPageToken" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "methods" : {
+      "com.touchnvoteui.entities.SecuredLoginEndpoint.updateSecuredLogin" : {
+        "request" : {
+          "$ref" : "SecuredLogin"
+        },
+        "response" : {
+          "$ref" : "SecuredLogin"
+        }
+      },
+      "com.touchnvoteui.entities.SecuredLoginEndpoint.insertSecuredLogin" : {
+        "request" : {
+          "$ref" : "SecuredLogin"
+        },
+        "response" : {
+          "$ref" : "SecuredLogin"
+        }
+      },
+      "com.touchnvoteui.entities.SecuredLoginEndpoint.listSecuredLogin" : {
+        "response" : {
+          "$ref" : "CollectionResponse_SecuredLogin"
+        }
+      },
+      "com.touchnvoteui.entities.SecuredLoginEndpoint.removeSecuredLogin" : {
+      },
+      "com.touchnvoteui.entities.SecuredLoginEndpoint.getSecuredLogin" : {
+        "response" : {
+          "$ref" : "SecuredLogin"
+        }
+      }
+    }
+  }
+}

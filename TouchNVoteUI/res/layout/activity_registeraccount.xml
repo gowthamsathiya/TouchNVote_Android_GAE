@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" >
+        
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="914dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/fNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="58dp"
+        android:text="@string/fname" />
+
+    <TextView
+        android:id="@+id/lNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fNameTextView"
+        android:layout_below="@+id/fNameTextView"
+        android:layout_marginTop="30dp"
+        android:text="@string/lname" />
+
+    <TextView
+        android:id="@+id/netIDTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lNameTextView"
+        android:layout_below="@+id/lNameTextView"
+        android:layout_marginTop="30dp"
+        android:text="@string/netid" />
+
+    <TextView
+        android:id="@+id/rPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/netIDTextView"
+        android:layout_below="@+id/netIDTextView"
+        android:layout_marginTop="30dp"
+        android:text="@string/password" />
+
+    <TextView
+        android:id="@+id/cPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rPasswordTextView"
+        android:layout_below="@+id/rPasswordTextView"
+        android:layout_marginTop="30dp"
+        android:text="@string/cpassword" />
+
+    <TextView
+        android:id="@+id/sQuestionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cPasswordTextView"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/squestions" />
+
+    <EditText
+        android:id="@+id/cRPasswordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cPasswordTextView"
+        android:layout_alignBottom="@+id/cPasswordTextView"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@+id/cPasswordTextView"
+        android:ems="8"
+        android:inputType="textPassword" 
+        android:maxLength="15">
+    </EditText>
+
+    <EditText
+        android:id="@+id/fNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lNameTextView"
+        android:layout_alignLeft="@+id/rPasswordEditText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="30" >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/lNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lNameTextView"
+        android:layout_alignLeft="@+id/fNameEditText"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="30" />
+
+    <EditText
+        android:id="@+id/netIDEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/netIDTextView"
+        android:layout_alignLeft="@+id/lNameEditText"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="text"
+        android:maxLength="10" />
+
+    <EditText
+        android:id="@+id/rPasswordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rPasswordTextView"
+        android:layout_alignLeft="@+id/cRPasswordEditText"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:maxLength="15" />
+
+    <Spinner
+        android:id="@+id/q1Spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sQuestionsTextView"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sQuestionsTextView"
+        android:layout_marginTop="14dp"
+        android:entries="@array/q1questions" />
+
+    <EditText
+        android:id="@+id/q1EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/q1Spinner"
+        android:layout_below="@+id/q1Spinner"
+        android:ems="10"
+        android:inputType="text"
+        android:maxLength="20" />
+
+    <Spinner
+        android:id="@+id/q2Spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/q1EditText"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/q1EditText"
+        android:layout_marginTop="14dp"
+        android:entries="@array/q2questions" />
+
+    <Spinner
+        android:id="@+id/q3Spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/q2EditText"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/q2EditText"
+        android:layout_marginTop="14dp" 
+        android:entries="@array/q3questions"/>
+
+    <EditText
+        android:id="@+id/q3EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/q3Spinner"
+        android:layout_below="@+id/q3Spinner"
+        android:ems="10"
+        android:inputType="text"
+        android:maxLength="20" />
+
+    <EditText
+        android:id="@+id/q2EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/q2Spinner"
+        android:layout_below="@+id/q2Spinner"
+        android:ems="10"
+        android:inputType="text" 
+        android:maxLength="20"/>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/cPasswordTextView"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/sbuttonstyle"
+        android:text="@string/submitButton" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/submitButton"
+        android:background="@drawable/sbuttonstyle"
+        android:text="@string/clearButton" />
+
+    <TextView
+        android:id="@+id/classTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/q3EditText"
+        android:layout_below="@+id/q3EditText"
+        android:layout_marginTop="48dp"
+        android:text="@string/classlabel" />
+
+    <Spinner
+        android:id="@+id/classSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/classTextView"
+        android:layout_marginTop="18dp" />
+    
+</RelativeLayout>
+</ScrollView>

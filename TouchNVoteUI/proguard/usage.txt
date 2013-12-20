@@ -1,0 +1,2085 @@
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoIcsImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoJellyBeanMr2
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoStubImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompatIcs
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompatJellyBeanMr2
+android.support.v4.app.ActionBarDrawerToggle
+android.support.v4.app.ActionBarDrawerToggle$1
+android.support.v4.app.ActionBarDrawerToggle$ActionBarDrawerToggleImpl
+android.support.v4.app.ActionBarDrawerToggle$ActionBarDrawerToggleImplBase
+android.support.v4.app.ActionBarDrawerToggle$ActionBarDrawerToggleImplHC
+android.support.v4.app.ActionBarDrawerToggle$Delegate
+android.support.v4.app.ActionBarDrawerToggle$DelegateProvider
+android.support.v4.app.ActionBarDrawerToggle$SlideDrawable
+android.support.v4.app.ActionBarDrawerToggleHoneycomb
+android.support.v4.app.ActionBarDrawerToggleHoneycomb$SetIndicatorInfo
+android.support.v4.app.ActivityCompat
+android.support.v4.app.ActivityCompatHoneycomb:
+    27:27:ActivityCompatHoneycomb()
+    34:35:static void dump(android.app.Activity,java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+android.support.v4.app.ActivityCompatJB
+android.support.v4.app.ActivityOptionsCompat
+android.support.v4.app.ActivityOptionsCompat$ActivityOptionsImplJB
+android.support.v4.app.ActivityOptionsCompatJB
+android.support.v4.app.BackStackRecord:
+    static final java.lang.String TAG
+    static final int OP_NULL
+    static final int OP_ADD
+    static final int OP_REPLACE
+    static final int OP_REMOVE
+    static final int OP_HIDE
+    static final int OP_SHOW
+    static final int OP_DETACH
+    static final int OP_ATTACH
+    338:338:public int getId()
+    342:342:public int getBreadCrumbTitleRes()
+    346:346:public int getBreadCrumbShortTitleRes()
+    350:353:public java.lang.CharSequence getBreadCrumbTitle()
+    357:360:public java.lang.CharSequence getBreadCrumbShortTitle()
+    379:380:public android.support.v4.app.FragmentTransaction add(android.support.v4.app.Fragment,java.lang.String)
+    384:385:public android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment)
+    421:421:public android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)
+    425:430:public android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment,java.lang.String)
+    434:439:public android.support.v4.app.FragmentTransaction remove(android.support.v4.app.Fragment)
+    443:448:public android.support.v4.app.FragmentTransaction hide(android.support.v4.app.Fragment)
+    452:457:public android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)
+    479:479:public android.support.v4.app.FragmentTransaction setCustomAnimations(int,int)
+    484:488:public android.support.v4.app.FragmentTransaction setCustomAnimations(int,int,int,int)
+    492:493:public android.support.v4.app.FragmentTransaction setTransition(int)
+    497:498:public android.support.v4.app.FragmentTransaction setTransitionStyle(int)
+    502:508:public android.support.v4.app.FragmentTransaction addToBackStack(java.lang.String)
+    512:512:public boolean isAddToBackStackAllowed()
+    516:521:public android.support.v4.app.FragmentTransaction disallowAddToBackStack()
+    525:527:public android.support.v4.app.FragmentTransaction setBreadCrumbTitle(int)
+    531:533:public android.support.v4.app.FragmentTransaction setBreadCrumbTitle(java.lang.CharSequence)
+    537:539:public android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(int)
+    543:545:public android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(java.lang.CharSequence)
+    578:578:public int commitAllowingStateLoss()
+    779:779:public int getTransition()
+    783:783:public int getTransitionStyle()
+    787:787:public boolean isEmpty()
+android.support.v4.app.DialogFragment
+android.support.v4.app.Fragment:
+    static final int INITIALIZING
+    static final int CREATED
+    static final int ACTIVITY_CREATED
+    static final int STOPPED
+    static final int STARTED
+    static final int RESUMED
+    489:489:public final int getId()
+    496:496:public final java.lang.String getTag()
+    507:511:public void setArguments(android.os.Bundle)
+    518:518:public final android.os.Bundle getArguments()
+    530:535:public void setInitialSavedState(android.support.v4.app.Fragment$SavedState)
+    549:551:public void setTargetFragment(android.support.v4.app.Fragment,int)
+    557:557:public final android.support.v4.app.Fragment getTargetFragment()
+    564:564:public final int getTargetRequestCode()
+    591:591:public final java.lang.CharSequence getText(int)
+    601:601:public final java.lang.String getString(int)
+    614:614:public final varargs java.lang.String getString(int,java.lang.Object[])
+    628:628:public final android.support.v4.app.FragmentManager getFragmentManager()
+    636:648:public final android.support.v4.app.FragmentManager getChildFragmentManager()
+    656:656:public final android.support.v4.app.Fragment getParentFragment()
+    663:663:public final boolean isAdded()
+    681:681:public final boolean isRemoving()
+    692:692:public final boolean isInLayout()
+    700:700:public final boolean isResumed()
+    709:709:public final boolean isVisible()
+    721:721:public final boolean isHidden()
+    726:726:public final boolean hasOptionsMenu()
+    731:731:public final boolean isMenuVisible()
+    759:764:public void setRetainInstance(boolean)
+    767:767:public final boolean getRetainInstance()
+    778:784:public void setHasOptionsMenu(boolean)
+    796:802:public void setMenuVisibility(boolean)
+    818:823:public void setUserVisibleHint(boolean)
+    830:830:public boolean getUserVisibleHint()
+    837:845:public android.support.v4.app.LoaderManager getLoaderManager()
+    853:857:public void startActivity(android.content.Intent)
+    864:868:public void startActivityForResult(android.content.Intent,int)
+    1019:1019:public android.view.View getView()
+    1306:1307:public void registerForContextMenu(android.view.View)
+    1317:1318:public void unregisterForContextMenu(android.view.View)
+    1428:1434:android.support.v4.app.Fragment findFragmentByWho(java.lang.String)
+android.support.v4.app.Fragment$SavedState:
+    309:311:Fragment$SavedState(android.os.Bundle)
+android.support.v4.app.FragmentActivity:
+    private static final java.lang.String TAG
+    static final java.lang.String FRAGMENTS_TAG
+    private static final int HONEYCOMB
+    static final int MSG_REALLY_STOPPED
+    static final int MSG_RESUME_PENDING
+    75:134:public FragmentActivity()
+    617:619:public java.lang.Object getLastCustomNonConfigurationInstance()
+    812:812:public android.support.v4.app.FragmentManager getSupportFragmentManager()
+    832:840:public void startActivityFromFragment(android.support.v4.app.Fragment,android.content.Intent,int)
+    861:866:public android.support.v4.app.LoaderManager getSupportLoaderManager()
+android.support.v4.app.FragmentActivity$1
+android.support.v4.app.FragmentActivity$2
+android.support.v4.app.FragmentActivity$FragmentTag:
+    public static final int Fragment_id
+    public static final int Fragment_name
+    public static final int Fragment_tag
+    134:134:FragmentActivity$FragmentTag()
+android.support.v4.app.FragmentManager:
+    public static final int POP_BACK_STACK_INCLUSIVE
+    142:142:public android.support.v4.app.FragmentTransaction openTransaction()
+    public abstract android.support.v4.app.Fragment findFragmentById(int)
+    public abstract void popBackStack()
+    public abstract boolean popBackStackImmediate()
+    public abstract void popBackStack(java.lang.String,int)
+    public abstract boolean popBackStackImmediate(java.lang.String,int)
+    public abstract void popBackStack(int,int)
+    public abstract boolean popBackStackImmediate(int,int)
+    public abstract int getBackStackEntryCount()
+    public abstract android.support.v4.app.FragmentManager$BackStackEntry getBackStackEntryAt(int)
+    public abstract void addOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    public abstract void removeOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    public abstract void putFragment(android.os.Bundle,java.lang.String,android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.Fragment getFragment(android.os.Bundle,java.lang.String)
+    public abstract java.util.List getFragments()
+    public abstract android.support.v4.app.Fragment$SavedState saveFragmentInstanceState(android.support.v4.app.Fragment)
+    public abstract void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+    345:346:public static void enableDebugLogging(boolean)
+android.support.v4.app.FragmentManager$BackStackEntry
+android.support.v4.app.FragmentManagerImpl:
+    static final java.lang.String TAG
+    static final java.lang.String TARGET_REQUEST_CODE_STATE_TAG
+    static final java.lang.String TARGET_STATE_TAG
+    static final java.lang.String VIEW_STATE_TAG
+    static final java.lang.String USER_VISIBLE_HINT_TAG
+    static final int ANIM_DUR
+    public static final int ANIM_STYLE_OPEN_ENTER
+    public static final int ANIM_STYLE_OPEN_EXIT
+    public static final int ANIM_STYLE_CLOSE_ENTER
+    public static final int ANIM_STYLE_CLOSE_EXIT
+    public static final int ANIM_STYLE_FADE_ENTER
+    public static final int ANIM_STYLE_FADE_EXIT
+    477:482:public void popBackStack()
+    493:498:public void popBackStack(java.lang.String,int)
+    502:504:public boolean popBackStackImmediate(java.lang.String,int)
+    509:517:public void popBackStack(int,int)
+    521:526:public boolean popBackStackImmediate(int,int)
+    531:531:public int getBackStackEntryCount()
+    536:536:public android.support.v4.app.FragmentManager$BackStackEntry getBackStackEntryAt(int)
+    541:545:public void addOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    549:552:public void removeOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    583:583:public java.util.List getFragments()
+    588:596:public android.support.v4.app.Fragment$SavedState saveFragmentInstanceState(android.support.v4.app.Fragment)
+    1330:1338:public android.support.v4.app.Fragment findFragmentByWho(java.lang.String)
+android.support.v4.app.FragmentManagerImpl$2
+android.support.v4.app.FragmentManagerImpl$3
+android.support.v4.app.FragmentManagerImpl$4
+android.support.v4.app.FragmentPagerAdapter
+android.support.v4.app.FragmentStatePagerAdapter
+android.support.v4.app.FragmentTabHost:
+    private android.widget.FrameLayout mRealTabContent
+    130:132:public FragmentTabHost(android.content.Context)
+    135:137:public FragmentTabHost(android.content.Context,android.util.AttributeSet)
+    140:172:private void initFragmentTabHost(android.content.Context,android.util.AttributeSet)
+    186:190:public void setup(android.content.Context,android.support.v4.app.FragmentManager)
+    193:205:public void setup(android.content.Context,android.support.v4.app.FragmentManager,int)
+    208:215:private void ensureContent()
+    223:242:public void addTab(android.widget.TabHost$TabSpec,java.lang.Class,android.os.Bundle)
+android.support.v4.app.FragmentTabHost$DummyTabFactory
+android.support.v4.app.FragmentTabHost$TabInfo:
+    67:71:FragmentTabHost$TabInfo(java.lang.String,java.lang.Class,android.os.Bundle)
+android.support.v4.app.FragmentTransaction:
+    public static final int TRANSIT_ENTER_MASK
+    public static final int TRANSIT_EXIT_MASK
+    public static final int TRANSIT_UNSET
+    public static final int TRANSIT_NONE
+    public static final int TRANSIT_FRAGMENT_OPEN
+    public static final int TRANSIT_FRAGMENT_CLOSE
+    public static final int TRANSIT_FRAGMENT_FADE
+    public abstract android.support.v4.app.FragmentTransaction add(android.support.v4.app.Fragment,java.lang.String)
+    public abstract android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment,java.lang.String)
+    public abstract android.support.v4.app.FragmentTransaction remove(android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction hide(android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)
+    public abstract boolean isEmpty()
+    public abstract android.support.v4.app.FragmentTransaction setCustomAnimations(int,int)
+    public abstract android.support.v4.app.FragmentTransaction setCustomAnimations(int,int,int,int)
+    public abstract android.support.v4.app.FragmentTransaction setTransition(int)
+    public abstract android.support.v4.app.FragmentTransaction setTransitionStyle(int)
+    public abstract android.support.v4.app.FragmentTransaction addToBackStack(java.lang.String)
+    public abstract boolean isAddToBackStackAllowed()
+    public abstract android.support.v4.app.FragmentTransaction disallowAddToBackStack()
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbTitle(int)
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbTitle(java.lang.CharSequence)
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(int)
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(java.lang.CharSequence)
+    public abstract int commitAllowingStateLoss()
+android.support.v4.app.ListFragment
+android.support.v4.app.ListFragment$1
+android.support.v4.app.ListFragment$2
+android.support.v4.app.LoaderManager:
+    public abstract android.support.v4.content.Loader initLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    public abstract android.support.v4.content.Loader restartLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    public abstract void destroyLoader(int)
+    public abstract android.support.v4.content.Loader getLoader(int)
+    public abstract void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+    177:178:public static void enableDebugLogging(boolean)
+android.support.v4.app.LoaderManagerImpl:
+    static final java.lang.String TAG
+    boolean mRetainingStarted
+    boolean mCreatingLoader
+    489:492:private android.support.v4.app.LoaderManagerImpl$LoaderInfo createLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    498:503:private android.support.v4.app.LoaderManagerImpl$LoaderInfo createAndInstallLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    508:515:void installLoader(android.support.v4.app.LoaderManagerImpl$LoaderInfo)
+    543:565:public android.support.v4.content.Loader initLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    593:647:public android.support.v4.content.Loader restartLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    658:678:public void destroyLoader(int)
+    686:697:public android.support.v4.content.Loader getLoader(int)
+android.support.v4.app.LoaderManagerImpl$LoaderInfo:
+    228:232:public LoaderManagerImpl$LoaderInfo(android.support.v4.app.LoaderManagerImpl,int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    362:415:public void onLoadComplete(android.support.v4.content.Loader,java.lang.Object)
+android.support.v4.app.NavUtils
+android.support.v4.app.NavUtils$NavUtilsImpl
+android.support.v4.app.NavUtils$NavUtilsImplBase
+android.support.v4.app.NavUtils$NavUtilsImplJB
+android.support.v4.app.NavUtilsJB
+android.support.v4.app.NotificationCompat
+android.support.v4.app.NotificationCompat$Action
+android.support.v4.app.NotificationCompat$BigPictureStyle
+android.support.v4.app.NotificationCompat$BigTextStyle
+android.support.v4.app.NotificationCompat$Builder
+android.support.v4.app.NotificationCompat$InboxStyle
+android.support.v4.app.NotificationCompat$NotificationCompatImpl
+android.support.v4.app.NotificationCompat$NotificationCompatImplBase
+android.support.v4.app.NotificationCompat$NotificationCompatImplHoneycomb
+android.support.v4.app.NotificationCompat$NotificationCompatImplIceCreamSandwich
+android.support.v4.app.NotificationCompat$NotificationCompatImplJellybean
+android.support.v4.app.NotificationCompat$Style
+android.support.v4.app.NotificationCompatHoneycomb
+android.support.v4.app.NotificationCompatIceCreamSandwich
+android.support.v4.app.NotificationCompatJellybean
+android.support.v4.app.ServiceCompat
+android.support.v4.app.ShareCompat
+android.support.v4.app.ShareCompat$IntentBuilder
+android.support.v4.app.ShareCompat$IntentReader
+android.support.v4.app.ShareCompat$ShareCompatImpl
+android.support.v4.app.ShareCompat$ShareCompatImplBase
+android.support.v4.app.ShareCompat$ShareCompatImplICS
+android.support.v4.app.ShareCompat$ShareCompatImplJB
+android.support.v4.app.ShareCompatICS
+android.support.v4.app.ShareCompatJB
+android.support.v4.app.TaskStackBuilder
+android.support.v4.app.TaskStackBuilder$SupportParentable
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImpl
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImplBase
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImplHoneycomb
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImplJellybean
+android.support.v4.app.TaskStackBuilderHoneycomb
+android.support.v4.app.TaskStackBuilderJellybean
+android.support.v4.content.AsyncTaskLoader
+android.support.v4.content.AsyncTaskLoader$LoadTask
+android.support.v4.content.ContextCompat
+android.support.v4.content.ContextCompatHoneycomb
+android.support.v4.content.ContextCompatJellybean
+android.support.v4.content.CursorLoader
+android.support.v4.content.FileProvider
+android.support.v4.content.FileProvider$PathStrategy
+android.support.v4.content.FileProvider$SimplePathStrategy
+android.support.v4.content.IntentCompat
+android.support.v4.content.IntentCompat$IntentCompatImpl
+android.support.v4.content.IntentCompat$IntentCompatImplBase
+android.support.v4.content.IntentCompat$IntentCompatImplHC
+android.support.v4.content.IntentCompat$IntentCompatImplIcsMr1
+android.support.v4.content.IntentCompatHoneycomb
+android.support.v4.content.IntentCompatIcsMr1
+android.support.v4.content.Loader:
+    android.content.Context mContext
+    91:93:public Loader(android.content.Context)
+    103:106:public void deliverResult(java.lang.Object)
+    112:112:public android.content.Context getContext()
+    119:119:public int getId()
+    158:158:public boolean isStarted()
+    167:167:public boolean isAbandoned()
+    176:176:public boolean isReset()
+    218:219:public void forceLoad()
+    226:226:protected void onForceLoad()
+    262:264:public void abandon()
+    276:276:protected void onAbandon()
+    314:317:public boolean takeContentChanged()
+    328:329:public void commitContentChanged()
+    339:342:public void rollbackContentChanged()
+    353:361:public void onContentChanged()
+android.support.v4.content.Loader$ForceLoadContentObserver
+android.support.v4.content.Loader$OnLoadCompleteListener:
+    public abstract void onLoadComplete(android.support.v4.content.Loader,java.lang.Object)
+android.support.v4.content.LocalBroadcastManager
+android.support.v4.content.LocalBroadcastManager$1
+android.support.v4.content.LocalBroadcastManager$BroadcastRecord
+android.support.v4.content.LocalBroadcastManager$ReceiverRecord
+android.support.v4.content.ModernAsyncTask
+android.support.v4.content.ModernAsyncTask$1
+android.support.v4.content.ModernAsyncTask$2
+android.support.v4.content.ModernAsyncTask$3
+android.support.v4.content.ModernAsyncTask$4
+android.support.v4.content.ModernAsyncTask$AsyncTaskResult
+android.support.v4.content.ModernAsyncTask$InternalHandler
+android.support.v4.content.ModernAsyncTask$Status
+android.support.v4.content.ModernAsyncTask$WorkerRunnable
+android.support.v4.content.WakefulBroadcastReceiver
+android.support.v4.content.pm.ActivityInfoCompat
+android.support.v4.database.DatabaseUtilsCompat
+android.support.v4.graphics.drawable.DrawableCompat
+android.support.v4.graphics.drawable.DrawableCompat$BaseDrawableImpl
+android.support.v4.graphics.drawable.DrawableCompat$DrawableImpl
+android.support.v4.graphics.drawable.DrawableCompat$HoneycombDrawableImpl
+android.support.v4.graphics.drawable.DrawableCompatHoneycomb
+android.support.v4.hardware.display.DisplayManagerCompat
+android.support.v4.hardware.display.DisplayManagerCompat$JellybeanMr1Impl
+android.support.v4.hardware.display.DisplayManagerCompat$LegacyImpl
+android.support.v4.hardware.display.DisplayManagerJellybeanMr1
+android.support.v4.internal.view.SupportMenu
+android.support.v4.internal.view.SupportMenuItem
+android.support.v4.internal.view.SupportSubMenu
+android.support.v4.media.TransportController
+android.support.v4.media.TransportMediator
+android.support.v4.media.TransportMediator$1
+android.support.v4.media.TransportMediator$2
+android.support.v4.media.TransportMediatorCallback
+android.support.v4.media.TransportMediatorJellybeanMR2
+android.support.v4.media.TransportMediatorJellybeanMR2$1
+android.support.v4.media.TransportMediatorJellybeanMR2$2
+android.support.v4.media.TransportMediatorJellybeanMR2$3
+android.support.v4.media.TransportMediatorJellybeanMR2$4
+android.support.v4.media.TransportPerformer
+android.support.v4.media.TransportStateListener
+android.support.v4.net.ConnectivityManagerCompat
+android.support.v4.net.ConnectivityManagerCompat$BaseConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompat$ConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompat$GingerbreadConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompat$HoneycombMR2ConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompat$JellyBeanConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompatGingerbread
+android.support.v4.net.ConnectivityManagerCompatHoneycombMR2
+android.support.v4.net.ConnectivityManagerCompatJellyBean
+android.support.v4.net.TrafficStatsCompat
+android.support.v4.net.TrafficStatsCompat$1
+android.support.v4.net.TrafficStatsCompat$BaseTrafficStatsCompatImpl
+android.support.v4.net.TrafficStatsCompat$BaseTrafficStatsCompatImpl$1
+android.support.v4.net.TrafficStatsCompat$BaseTrafficStatsCompatImpl$SocketTags
+android.support.v4.net.TrafficStatsCompat$IcsTrafficStatsCompatImpl
+android.support.v4.net.TrafficStatsCompat$TrafficStatsCompatImpl
+android.support.v4.net.TrafficStatsCompatIcs
+android.support.v4.os.ParcelableCompat:
+    26:42:public ParcelableCompat()
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2Stub:
+    22:22:ParcelableCompatCreatorHoneycombMR2Stub()
+android.support.v4.text.BidiFormatter
+android.support.v4.text.BidiFormatter$1
+android.support.v4.text.BidiFormatter$Builder
+android.support.v4.text.BidiFormatter$DirectionalityEstimator
+android.support.v4.text.ICUCompat
+android.support.v4.text.ICUCompat$ICUCompatImpl
+android.support.v4.text.ICUCompat$ICUCompatImplBase
+android.support.v4.text.ICUCompat$ICUCompatImplIcs
+android.support.v4.text.ICUCompatIcs
+android.support.v4.text.TextDirectionHeuristicCompat
+android.support.v4.text.TextDirectionHeuristicsCompat
+android.support.v4.text.TextDirectionHeuristicsCompat$1
+android.support.v4.text.TextDirectionHeuristicsCompat$AnyStrong
+android.support.v4.text.TextDirectionHeuristicsCompat$FirstStrong
+android.support.v4.text.TextDirectionHeuristicsCompat$TextDirectionAlgorithm
+android.support.v4.text.TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl
+android.support.v4.text.TextDirectionHeuristicsCompat$TextDirectionHeuristicInternal
+android.support.v4.text.TextDirectionHeuristicsCompat$TextDirectionHeuristicLocale
+android.support.v4.text.TextUtilsCompat
+android.support.v4.util.AtomicFile
+android.support.v4.util.DebugUtils:
+    25:25:public DebugUtils()
+android.support.v4.util.LongSparseArray
+android.support.v4.util.LruCache
+android.support.v4.util.SparseArrayCompat:
+    52:52:public java.lang.Object get(int)
+    60:65:public java.lang.Object get(int,java.lang.Object)
+    73:81:public void delete(int)
+    87:88:public void remove(int)
+    94:98:public void removeAt(int)
+    107:111:public void removeAtRange(int,int)
+    146:190:public void put(int,java.lang.Object)
+    236:241:public void setValueAt(int,java.lang.Object)
+    249:253:public int indexOfKey(int)
+    265:273:public int indexOfValue(java.lang.Object)
+    296:323:public void append(int,java.lang.Object)
+    326:342:private static int binarySearch(int[],int,int,int)
+android.support.v4.util.TimeUtils
+android.support.v4.view.AccessibilityDelegateCompat
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateImpl
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateJellyBeanImpl
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateJellyBeanImpl$1
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateStubImpl
+android.support.v4.view.AccessibilityDelegateCompatIcs
+android.support.v4.view.AccessibilityDelegateCompatIcs$1
+android.support.v4.view.AccessibilityDelegateCompatIcs$AccessibilityDelegateBridge
+android.support.v4.view.AccessibilityDelegateCompatJellyBean
+android.support.v4.view.AccessibilityDelegateCompatJellyBean$1
+android.support.v4.view.AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean
+android.support.v4.view.ActionProvider
+android.support.v4.view.ActionProvider$SubUiVisibilityListener
+android.support.v4.view.ActionProvider$VisibilityListener
+android.support.v4.view.GestureDetectorCompat
+android.support.v4.view.GestureDetectorCompat$GestureDetectorCompatImpl
+android.support.v4.view.GestureDetectorCompat$GestureDetectorCompatImplBase
+android.support.v4.view.GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler
+android.support.v4.view.GestureDetectorCompat$GestureDetectorCompatImplJellybeanMr2
+android.support.v4.view.GravityCompat:
+    public static final int RELATIVE_LAYOUT_DIRECTION
+    public static final int START
+    public static final int END
+    public static final int RELATIVE_HORIZONTAL_GRAVITY_MASK
+    27:62:public GravityCompat()
+    132:133:public static void apply(int,int,int,android.graphics.Rect,android.graphics.Rect,int)
+    162:163:public static void apply(int,int,int,android.graphics.Rect,int,int,android.graphics.Rect,int)
+    186:187:public static void applyDisplay(int,android.graphics.Rect,android.graphics.Rect,int)
+android.support.v4.view.GravityCompat$GravityCompatImpl:
+    public abstract void apply(int,int,int,android.graphics.Rect,android.graphics.Rect,int)
+    public abstract void apply(int,int,int,android.graphics.Rect,int,int,android.graphics.Rect,int)
+    public abstract void applyDisplay(int,android.graphics.Rect,android.graphics.Rect,int)
+android.support.v4.view.GravityCompat$GravityCompatImplBase:
+    46:47:public void apply(int,int,int,android.graphics.Rect,android.graphics.Rect,int)
+    52:53:public void apply(int,int,int,android.graphics.Rect,int,int,android.graphics.Rect,int)
+    58:59:public void applyDisplay(int,android.graphics.Rect,android.graphics.Rect,int)
+android.support.v4.view.GravityCompat$GravityCompatImplJellybeanMr1:
+    71:72:public void apply(int,int,int,android.graphics.Rect,android.graphics.Rect,int)
+    77:79:public void apply(int,int,int,android.graphics.Rect,int,int,android.graphics.Rect,int)
+    83:84:public void applyDisplay(int,android.graphics.Rect,android.graphics.Rect,int)
+android.support.v4.view.GravityCompatJellybeanMr1:
+    23:23:GravityCompatJellybeanMr1()
+    31:32:public static void apply(int,int,int,android.graphics.Rect,android.graphics.Rect,int)
+    36:37:public static void apply(int,int,int,android.graphics.Rect,int,int,android.graphics.Rect,int)
+    40:41:public static void applyDisplay(int,android.graphics.Rect,android.graphics.Rect,int)
+android.support.v4.view.KeyEventCompat:
+    26:144:public KeyEventCompat()
+    176:176:public static int normalizeMetaState(int)
+    180:180:public static boolean metaStateHasModifiers(int,int)
+    184:184:public static boolean metaStateHasNoModifiers(int)
+    200:200:public static boolean isTracking(android.view.KeyEvent)
+    204:204:public static java.lang.Object getKeyDispatcherState(android.view.View)
+    209:209:public static boolean dispatch(android.view.KeyEvent,android.view.KeyEvent$Callback,java.lang.Object,java.lang.Object)
+android.support.v4.view.KeyEventCompat$BaseKeyEventVersionImpl:
+    private static final int META_MODIFIER_MASK
+    private static final int META_ALL_MASK
+    103:103:public boolean isTracking(android.view.KeyEvent)
+    108:108:public java.lang.Object getKeyDispatcherState(android.view.View)
+    114:114:public boolean dispatch(android.view.KeyEvent,android.view.KeyEvent$Callback,java.lang.Object,java.lang.Object)
+android.support.v4.view.KeyEventCompat$EclairKeyEventVersionImpl:
+    126:126:public boolean isTracking(android.view.KeyEvent)
+    131:131:public java.lang.Object getKeyDispatcherState(android.view.View)
+    137:137:public boolean dispatch(android.view.KeyEvent,android.view.KeyEvent$Callback,java.lang.Object,java.lang.Object)
+android.support.v4.view.KeyEventCompat$KeyEventVersionImpl:
+    public abstract int normalizeMetaState(int)
+    public abstract boolean isTracking(android.view.KeyEvent)
+    public abstract java.lang.Object getKeyDispatcherState(android.view.View)
+    public abstract boolean dispatch(android.view.KeyEvent,android.view.KeyEvent$Callback,java.lang.Object,java.lang.Object)
+android.support.v4.view.KeyEventCompatEclair:
+    23:23:KeyEventCompatEclair()
+    25:25:public static java.lang.Object getKeyDispatcherState(android.view.View)
+    30:30:public static boolean dispatch(android.view.KeyEvent,android.view.KeyEvent$Callback,java.lang.Object,java.lang.Object)
+    38:38:public static boolean isTracking(android.view.KeyEvent)
+android.support.v4.view.KeyEventCompatHoneycomb:
+    24:24:KeyEventCompatHoneycomb()
+android.support.v4.view.MarginLayoutParamsCompat
+android.support.v4.view.MarginLayoutParamsCompat$MarginLayoutParamsCompatImpl
+android.support.v4.view.MarginLayoutParamsCompat$MarginLayoutParamsCompatImplBase
+android.support.v4.view.MarginLayoutParamsCompat$MarginLayoutParamsCompatImplJbMr1
+android.support.v4.view.MarginLayoutParamsCompatJellybeanMr1
+android.support.v4.view.MenuCompat
+android.support.v4.view.MenuItemCompat
+android.support.v4.view.MenuItemCompat$BaseMenuVersionImpl
+android.support.v4.view.MenuItemCompat$HoneycombMenuVersionImpl
+android.support.v4.view.MenuItemCompat$IcsMenuVersionImpl
+android.support.v4.view.MenuItemCompat$IcsMenuVersionImpl$1
+android.support.v4.view.MenuItemCompat$MenuVersionImpl
+android.support.v4.view.MenuItemCompat$OnActionExpandListener
+android.support.v4.view.MenuItemCompatHoneycomb
+android.support.v4.view.MenuItemCompatIcs
+android.support.v4.view.MenuItemCompatIcs$OnActionExpandListenerWrapper
+android.support.v4.view.MenuItemCompatIcs$SupportActionExpandProxy
+android.support.v4.view.MotionEventCompat:
+    public static final int ACTION_MASK
+    public static final int ACTION_POINTER_DOWN
+    public static final int ACTION_POINTER_UP
+    public static final int ACTION_HOVER_MOVE
+    public static final int ACTION_SCROLL
+    public static final int ACTION_POINTER_INDEX_MASK
+    public static final int ACTION_POINTER_INDEX_SHIFT
+    public static final int ACTION_HOVER_ENTER
+    public static final int ACTION_HOVER_EXIT
+    25:80:public MotionEventCompat()
+android.support.v4.view.MotionEventCompatEclair:
+    24:24:MotionEventCompatEclair()
+android.support.v4.view.PagerAdapter:
+    public static final int POSITION_UNCHANGED
+    public static final int POSITION_NONE
+    78:79:public PagerAdapter()
+    276:277:public void notifyDataSetChanged()
+    307:307:public java.lang.CharSequence getPageTitle(int)
+android.support.v4.view.PagerTabStrip
+android.support.v4.view.PagerTabStrip$1
+android.support.v4.view.PagerTabStrip$2
+android.support.v4.view.PagerTitleStrip
+android.support.v4.view.PagerTitleStrip$1
+android.support.v4.view.PagerTitleStrip$PageListener
+android.support.v4.view.PagerTitleStrip$PagerTitleStripImpl
+android.support.v4.view.PagerTitleStrip$PagerTitleStripImplBase
+android.support.v4.view.PagerTitleStrip$PagerTitleStripImplIcs
+android.support.v4.view.PagerTitleStripIcs
+android.support.v4.view.PagerTitleStripIcs$SingleLineAllCapsTransform
+android.support.v4.view.VelocityTrackerCompat:
+    25:51:public VelocityTrackerCompat()
+android.support.v4.view.VelocityTrackerCompatHoneycomb:
+    24:24:VelocityTrackerCompatHoneycomb()
+android.support.v4.view.ViewCompat:
+    public static final int OVER_SCROLL_ALWAYS
+    public static final int OVER_SCROLL_IF_CONTENT_SCROLLS
+    public static final int OVER_SCROLL_NEVER
+    private static final long FAKE_FRAME_TIME
+    public static final int IMPORTANT_FOR_ACCESSIBILITY_AUTO
+    public static final int IMPORTANT_FOR_ACCESSIBILITY_YES
+    public static final int IMPORTANT_FOR_ACCESSIBILITY_NO
+    public static final int LAYER_TYPE_NONE
+    public static final int LAYER_TYPE_SOFTWARE
+    public static final int LAYER_TYPE_HARDWARE
+    public static final int LAYOUT_DIRECTION_LTR
+    public static final int LAYOUT_DIRECTION_RTL
+    public static final int LAYOUT_DIRECTION_INHERIT
+    public static final int LAYOUT_DIRECTION_LOCALE
+    34:397:public ViewCompat()
+    462:462:public static boolean canScrollVertically(android.view.View,int)
+    491:492:public static void setOverScrollMode(android.view.View,int)
+    528:529:public static void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    561:562:public static void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    597:598:public static void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    612:613:public static void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+    624:624:public static boolean hasTransientState(android.view.View)
+    635:636:public static void setHasTransientState(android.view.View,boolean)
+    697:698:public static void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    713:713:public static int getImportantForAccessibility(android.view.View)
+    729:730:public static void setImportantForAccessibility(android.view.View,int)
+    747:747:public static boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+    774:774:public static android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View)
+    785:785:public static float getAlpha(android.view.View)
+    859:859:public static int getLabelFor(android.view.View)
+    870:871:public static void setLabelFor(android.view.View,int)
+    938:939:public static void setLayoutDirection(android.view.View,int)
+    950:950:public static android.view.ViewParent getParentForAccessibility(android.view.View)
+android.support.v4.view.ViewCompat$BaseViewCompatImpl:
+    175:175:public boolean canScrollVertically(android.view.View,int)
+    182:182:public void setOverScrollMode(android.view.View,int)
+    185:185:public void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+    188:188:public void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    191:191:public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    194:194:public void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    197:197:public boolean hasTransientState(android.view.View)
+    201:201:public void setHasTransientState(android.view.View,boolean)
+    212:213:public void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    218:218:public int getImportantForAccessibility(android.view.View)
+    222:222:public void setImportantForAccessibility(android.view.View,int)
+    224:224:public boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+    227:227:public android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View)
+    230:230:public float getAlpha(android.view.View)
+    239:239:public int getLabelFor(android.view.View)
+    243:243:public void setLabelFor(android.view.View,int)
+    256:256:public void setLayoutDirection(android.view.View,int)
+    260:260:public android.view.ViewParent getParentForAccessibility(android.view.View)
+android.support.v4.view.ViewCompat$GBViewCompatImpl:
+    287:288:public void setOverScrollMode(android.view.View,int)
+android.support.v4.view.ViewCompat$HCViewCompatImpl:
+    298:298:public float getAlpha(android.view.View)
+android.support.v4.view.ViewCompat$ICSViewCompatImpl:
+    325:325:public boolean canScrollVertically(android.view.View,int)
+    329:330:public void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    333:334:public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    337:338:public void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    341:342:public void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+android.support.v4.view.ViewCompat$JBViewCompatImpl:
+    348:348:public boolean hasTransientState(android.view.View)
+    352:353:public void setHasTransientState(android.view.View,boolean)
+    368:369:public void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    372:372:public int getImportantForAccessibility(android.view.View)
+    376:377:public void setImportantForAccessibility(android.view.View,int)
+    380:380:public boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+    384:388:public android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View)
+    393:393:public android.view.ViewParent getParentForAccessibility(android.view.View)
+android.support.v4.view.ViewCompat$JbMr1ViewCompatImpl:
+    401:401:public int getLabelFor(android.view.View)
+    406:407:public void setLabelFor(android.view.View,int)
+    421:422:public void setLayoutDirection(android.view.View,int)
+android.support.v4.view.ViewCompat$ViewCompatImpl:
+    public abstract boolean canScrollVertically(android.view.View,int)
+    public abstract void setOverScrollMode(android.view.View,int)
+    public abstract void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    public abstract void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+    public abstract boolean hasTransientState(android.view.View)
+    public abstract void setHasTransientState(android.view.View,boolean)
+    public abstract void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    public abstract int getImportantForAccessibility(android.view.View)
+    public abstract void setImportantForAccessibility(android.view.View,int)
+    public abstract boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+    public abstract android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View)
+    public abstract float getAlpha(android.view.View)
+    public abstract int getLabelFor(android.view.View)
+    public abstract void setLabelFor(android.view.View,int)
+    public abstract void setLayoutDirection(android.view.View,int)
+    public abstract android.view.ViewParent getParentForAccessibility(android.view.View)
+android.support.v4.view.ViewCompatEclairMr1:
+    22:22:ViewCompatEclairMr1()
+android.support.v4.view.ViewCompatGingerbread:
+    21:21:ViewCompatGingerbread()
+    27:28:public static void setOverScrollMode(android.view.View,int)
+android.support.v4.view.ViewCompatHC:
+    23:23:ViewCompatHC()
+    29:29:public static float getAlpha(android.view.View)
+android.support.v4.view.ViewCompatICS:
+    27:27:ViewCompatICS()
+    34:34:public static boolean canScrollVertically(android.view.View,int)
+    38:39:public static void setAccessibilityDelegate(android.view.View,java.lang.Object)
+    42:43:public static void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    46:47:public static void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    50:51:public static void onInitializeAccessibilityNodeInfo(android.view.View,java.lang.Object)
+android.support.v4.view.ViewCompatJB:
+    26:26:ViewCompatJB()
+    29:29:public static boolean hasTransientState(android.view.View)
+    33:34:public static void setHasTransientState(android.view.View,boolean)
+    50:51:public static void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    54:54:public static int getImportantForAccessibility(android.view.View)
+    58:59:public static void setImportantForAccessibility(android.view.View,int)
+    62:62:public static boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+    66:66:public static java.lang.Object getAccessibilityNodeProvider(android.view.View)
+    70:70:public static android.view.ViewParent getParentForAccessibility(android.view.View)
+android.support.v4.view.ViewCompatJellybeanMr1:
+    25:25:ViewCompatJellybeanMr1()
+    28:28:public static int getLabelFor(android.view.View)
+    32:33:public static void setLabelFor(android.view.View,int)
+    44:45:public static void setLayoutDirection(android.view.View,int)
+android.support.v4.view.ViewConfigurationCompat
+android.support.v4.view.ViewConfigurationCompat$BaseViewConfigurationVersionImpl
+android.support.v4.view.ViewConfigurationCompat$FroyoViewConfigurationVersionImpl
+android.support.v4.view.ViewConfigurationCompat$ViewConfigurationVersionImpl
+android.support.v4.view.ViewConfigurationCompatFroyo
+android.support.v4.view.ViewGroupCompat
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatHCImpl
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatIcsImpl
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatImpl
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatStubImpl
+android.support.v4.view.ViewGroupCompatHC
+android.support.v4.view.ViewGroupCompatIcs
+android.support.v4.view.ViewPager:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    private static final boolean USE_CACHE
+    private static final int DEFAULT_OFFSCREEN_PAGES
+    private static final int MAX_SETTLE_DURATION
+    private static final int MIN_DISTANCE_FOR_FLING
+    private static final int DEFAULT_GUTTER_SIZE
+    private static final int MIN_FLING_VELOCITY
+    private boolean mIgnoreGutter
+    private static final int INVALID_POINTER
+    private static final int CLOSE_ENOUGH
+    private long mFakeDragBeginTime
+    private static final int DRAW_ORDER_DEFAULT
+    private static final int DRAW_ORDER_FORWARD
+    private static final int DRAW_ORDER_REVERSE
+    public static final int SCROLL_STATE_IDLE
+    public static final int SCROLL_STATE_DRAGGING
+    public static final int SCROLL_STATE_SETTLING
+    344:346:public ViewPager(android.content.Context)
+    349:351:public ViewPager(android.content.Context,android.util.AttributeSet)
+    354:379:void initViewPager()
+    608:620:public void setPageTransformer(boolean,android.support.v4.view.ViewPager$PageTransformer)
+    654:656:android.support.v4.view.ViewPager$OnPageChangeListener setInternalPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener)
+    778:779:void smoothScrollTo(int,int)
+    2259:2275:public boolean beginFakeDrag()
+    2285:2306:public void endFakeDrag()
+    2316:2354:public void fakeDragBy(float)
+    2366:2366:public boolean isFakeDragging()
+    84:84:static synthetic void access$000(android.support.v4.view.ViewPager,int)
+    84:84:static synthetic android.support.v4.view.PagerAdapter access$200(android.support.v4.view.ViewPager)
+    84:84:static synthetic int access$300(android.support.v4.view.ViewPager)
+android.support.v4.view.ViewPager$3
+android.support.v4.view.ViewPager$MyAccessibilityDelegate
+android.support.v4.view.ViewPager$SimpleOnPageChangeListener
+android.support.v4.view.ViewParentCompat
+android.support.v4.view.ViewParentCompat$ViewParentCompatICSImpl
+android.support.v4.view.ViewParentCompat$ViewParentCompatImpl
+android.support.v4.view.ViewParentCompat$ViewParentCompatStubImpl
+android.support.v4.view.ViewParentCompatICS
+android.support.v4.view.WindowCompat
+android.support.v4.view.accessibility.AccessibilityEventCompat
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventIcsImpl
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventStubImpl
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventVersionImpl
+android.support.v4.view.accessibility.AccessibilityEventCompatIcs
+android.support.v4.view.accessibility.AccessibilityManagerCompat
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerIcsImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerIcsImpl$1
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerStubImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerVersionImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityStateChangeListenerCompat
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs$1
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs$AccessibilityStateChangeListenerBridge
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoIcsImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoJellybeanImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoJellybeanMr2Impl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoStubImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompatIcs
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompatJellyBean
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompatJellybeanMr2
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderJellyBeanImpl
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderJellyBeanImpl$1
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderStubImpl
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompatJellyBean
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompatJellyBean$1
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompatJellyBean$AccessibilityNodeInfoBridge
+android.support.v4.view.accessibility.AccessibilityRecordCompat
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordIcsImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordIcsMr1Impl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordJellyBeanImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordStubImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompatIcs
+android.support.v4.view.accessibility.AccessibilityRecordCompatIcsMr1
+android.support.v4.view.accessibility.AccessibilityRecordCompatJellyBean
+android.support.v4.widget.CursorAdapter
+android.support.v4.widget.CursorAdapter$1
+android.support.v4.widget.CursorAdapter$ChangeObserver
+android.support.v4.widget.CursorAdapter$MyDataSetObserver
+android.support.v4.widget.CursorFilter
+android.support.v4.widget.CursorFilter$CursorFilterClient
+android.support.v4.widget.DrawerLayout:
+    private static final java.lang.String TAG
+    public static final int STATE_IDLE
+    public static final int STATE_DRAGGING
+    public static final int STATE_SETTLING
+    public static final int LOCK_MODE_UNLOCKED
+    public static final int LOCK_MODE_LOCKED_CLOSED
+    public static final int LOCK_MODE_LOCKED_OPEN
+    private static final int MIN_DRAWER_MARGIN
+    private static final int DEFAULT_SCRIM_COLOR
+    private static final int PEEK_DELAY
+    private static final int MIN_FLING_VELOCITY
+    private static final boolean ALLOW_EDGE_LOCK
+    private static final boolean CHILDREN_DISALLOW_INTERCEPT
+    private static final float TOUCH_SLOP_SENSITIVITY
+    217:218:public DrawerLayout(android.content.Context)
+    221:222:public DrawerLayout(android.content.Context,android.util.AttributeSet)
+    225:249:public DrawerLayout(android.content.Context,android.util.AttributeSet,int)
+    265:275:public void setDrawerShadow(android.graphics.drawable.Drawable,int)
+    285:286:public void setDrawerShadow(int,int)
+    394:399:public void setDrawerLockMode(int,android.view.View)
+    409:416:public int getDrawerLockMode(int)
+    536:544:void moveDrawerToOffset(android.view.View,float)
+    1031:1040:public void openDrawer(int)
+    1074:1083:public void closeDrawer(int)
+    1096:1099:public boolean isDrawerOpen(android.view.View)
+    1112:1116:public boolean isDrawerOpen(int)
+    1143:1147:public boolean isDrawerVisible(int)
+    1202:1213:void cancelChildViewTouch()
+android.support.v4.widget.DrawerLayout$AccessibilityDelegate
+android.support.v4.widget.DrawerLayout$LayoutParams:
+    1502:1504:public DrawerLayout$LayoutParams(int,int,int)
+android.support.v4.widget.DrawerLayout$SimpleDrawerListener
+android.support.v4.widget.DrawerLayout$ViewDragCallback:
+    1326:1328:public DrawerLayout$ViewDragCallback(android.support.v4.widget.DrawerLayout,int)
+    1331:1332:public void setDragger(android.support.v4.widget.ViewDragHelper)
+    1411:1433:private void peekDrawer()
+    1316:1316:static synthetic void access$000(android.support.v4.widget.DrawerLayout$ViewDragCallback)
+android.support.v4.widget.DrawerLayout$ViewDragCallback$1
+android.support.v4.widget.EdgeEffectCompat:
+    132:134:public EdgeEffectCompat(android.content.Context)
+    204:204:public boolean onAbsorb(int)
+android.support.v4.widget.EdgeEffectCompat$BaseEdgeEffectImpl:
+    60:60:public java.lang.Object newEdgeEffect(android.content.Context)
+    82:82:public boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectIcsImpl:
+    92:92:public java.lang.Object newEdgeEffect(android.content.Context)
+    116:116:public boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl:
+    public abstract java.lang.Object newEdgeEffect(android.content.Context)
+    public abstract boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompatIcs:
+    28:28:EdgeEffectCompatIcs()
+    30:30:public static java.lang.Object newEdgeEffect(android.content.Context)
+    57:58:public static boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.ExploreByTouchHelper
+android.support.v4.widget.ExploreByTouchHelper$1
+android.support.v4.widget.ExploreByTouchHelper$ExploreByTouchNodeProvider
+android.support.v4.widget.ResourceCursorAdapter
+android.support.v4.widget.ScrollerCompat:
+    251:251:public static android.support.v4.widget.ScrollerCompat create(android.content.Context)
+    255:255:public static android.support.v4.widget.ScrollerCompat create(android.content.Context,android.view.animation.Interpolator)
+    258:260:ScrollerCompat(android.content.Context,android.view.animation.Interpolator)
+    314:314:public float getCurrVelocity()
+    341:342:public void startScroll(int,int,int,int)
+    382:383:public void fling(int,int,int,int,int,int,int,int)
+    410:412:public void fling(int,int,int,int,int,int,int,int,int,int)
+    437:438:public void notifyHorizontalEdgeReached(int,int,int)
+    454:455:public void notifyVerticalEdgeReached(int,int,int)
+    471:471:public boolean isOverScrolled()
+android.support.v4.widget.ScrollerCompat$ScrollerCompatImpl:
+    public abstract java.lang.Object createScroller(android.content.Context,android.view.animation.Interpolator)
+    public abstract float getCurrVelocity(java.lang.Object)
+    public abstract void startScroll(java.lang.Object,int,int,int,int)
+    public abstract void fling(java.lang.Object,int,int,int,int,int,int,int,int)
+    public abstract void fling(java.lang.Object,int,int,int,int,int,int,int,int,int,int)
+    public abstract void notifyHorizontalEdgeReached(java.lang.Object,int,int,int)
+    public abstract void notifyVerticalEdgeReached(java.lang.Object,int,int,int)
+    public abstract boolean isOverScrolled(java.lang.Object)
+android.support.v4.widget.ScrollerCompat$ScrollerCompatImplBase:
+    58:58:public java.lang.Object createScroller(android.content.Context,android.view.animation.Interpolator)
+    79:79:public float getCurrVelocity(java.lang.Object)
+    89:90:public void startScroll(java.lang.Object,int,int,int,int)
+    101:102:public void fling(java.lang.Object,int,int,int,int,int,int,int,int)
+    107:108:public void fling(java.lang.Object,int,int,int,int,int,int,int,int,int,int)
+    119:119:public void notifyHorizontalEdgeReached(java.lang.Object,int,int,int)
+    124:124:public void notifyVerticalEdgeReached(java.lang.Object,int,int,int)
+    129:129:public boolean isOverScrolled(java.lang.Object)
+android.support.v4.widget.ScrollerCompat$ScrollerCompatImplGingerbread:
+    146:146:public java.lang.Object createScroller(android.content.Context,android.view.animation.Interpolator)
+    166:166:public float getCurrVelocity(java.lang.Object)
+    176:177:public void startScroll(java.lang.Object,int,int,int,int)
+    188:190:public void fling(java.lang.Object,int,int,int,int,int,int,int,int)
+    195:197:public void fling(java.lang.Object,int,int,int,int,int,int,int,int,int,int)
+    207:208:public void notifyHorizontalEdgeReached(java.lang.Object,int,int,int)
+    212:213:public void notifyVerticalEdgeReached(java.lang.Object,int,int,int)
+    217:217:public boolean isOverScrolled(java.lang.Object)
+android.support.v4.widget.ScrollerCompat$ScrollerCompatImplIcs:
+    234:234:public float getCurrVelocity(java.lang.Object)
+android.support.v4.widget.ScrollerCompatGingerbread:
+    24:24:ScrollerCompatGingerbread()
+    26:26:public static java.lang.Object createScroller(android.content.Context,android.view.animation.Interpolator)
+    47:48:public static void startScroll(java.lang.Object,int,int,int,int)
+    57:58:public static void fling(java.lang.Object,int,int,int,int,int,int,int,int)
+    62:64:public static void fling(java.lang.Object,int,int,int,int,int,int,int,int,int,int)
+    72:73:public static void notifyHorizontalEdgeReached(java.lang.Object,int,int,int)
+    76:77:public static void notifyVerticalEdgeReached(java.lang.Object,int,int,int)
+    80:80:public static boolean isOverScrolled(java.lang.Object)
+android.support.v4.widget.ScrollerCompatIcs
+android.support.v4.widget.SearchViewCompat
+android.support.v4.widget.SearchViewCompat$OnCloseListenerCompat
+android.support.v4.widget.SearchViewCompat$OnQueryTextListenerCompat
+android.support.v4.widget.SearchViewCompat$SearchViewCompatHoneycombImpl
+android.support.v4.widget.SearchViewCompat$SearchViewCompatHoneycombImpl$1
+android.support.v4.widget.SearchViewCompat$SearchViewCompatHoneycombImpl$2
+android.support.v4.widget.SearchViewCompat$SearchViewCompatIcsImpl
+android.support.v4.widget.SearchViewCompat$SearchViewCompatImpl
+android.support.v4.widget.SearchViewCompat$SearchViewCompatStubImpl
+android.support.v4.widget.SearchViewCompatHoneycomb
+android.support.v4.widget.SearchViewCompatHoneycomb$1
+android.support.v4.widget.SearchViewCompatHoneycomb$2
+android.support.v4.widget.SearchViewCompatHoneycomb$OnCloseListenerCompatBridge
+android.support.v4.widget.SearchViewCompatHoneycomb$OnQueryTextListenerCompatBridge
+android.support.v4.widget.SearchViewCompatIcs
+android.support.v4.widget.SearchViewCompatIcs$MySearchView
+android.support.v4.widget.SimpleCursorAdapter
+android.support.v4.widget.SimpleCursorAdapter$CursorToStringConverter
+android.support.v4.widget.SimpleCursorAdapter$ViewBinder
+android.support.v4.widget.SlidingPaneLayout:
+    private static final java.lang.String TAG
+    private static final int DEFAULT_OVERHANG_SIZE
+    private static final int DEFAULT_FADE_COLOR
+    private static final int MIN_FLING_VELOCITY
+    244:245:public SlidingPaneLayout(android.content.Context)
+    248:249:public SlidingPaneLayout(android.content.Context,android.util.AttributeSet)
+    252:267:public SlidingPaneLayout(android.content.Context,android.util.AttributeSet,int)
+    328:331:void dispatchOnPanelSlide(android.view.View)
+    334:338:void dispatchOnPanelOpened(android.view.View)
+    341:345:void dispatchOnPanelClosed(android.view.View)
+    848:849:public void smoothSlideOpen()
+    866:867:public void smoothSlideClosed()
+    895:895:public boolean canSlide()
+    909:922:private void onPanelDragged(int)
+    1103:1122:protected boolean canScroll(android.view.View,boolean,int,int,int)
+    88:88:static synthetic boolean access$100(android.support.v4.widget.SlidingPaneLayout)
+    88:88:static synthetic android.support.v4.widget.ViewDragHelper access$200(android.support.v4.widget.SlidingPaneLayout)
+    88:88:static synthetic float access$300(android.support.v4.widget.SlidingPaneLayout)
+    88:88:static synthetic android.view.View access$400(android.support.v4.widget.SlidingPaneLayout)
+    88:88:static synthetic boolean access$502(android.support.v4.widget.SlidingPaneLayout,boolean)
+    88:88:static synthetic void access$600(android.support.v4.widget.SlidingPaneLayout,int)
+    88:88:static synthetic int access$700(android.support.v4.widget.SlidingPaneLayout)
+android.support.v4.widget.SlidingPaneLayout$AccessibilityDelegate
+android.support.v4.widget.SlidingPaneLayout$DragHelperCallback
+android.support.v4.widget.SlidingPaneLayout$LayoutParams:
+    1277:1278:public SlidingPaneLayout$LayoutParams(int,int)
+    1289:1291:public SlidingPaneLayout$LayoutParams(android.support.v4.widget.SlidingPaneLayout$LayoutParams)
+android.support.v4.widget.SlidingPaneLayout$PanelSlideListener:
+    public abstract void onPanelSlide(android.view.View,float)
+    public abstract void onPanelOpened(android.view.View)
+    public abstract void onPanelClosed(android.view.View)
+android.support.v4.widget.SlidingPaneLayout$SimplePanelSlideListener
+android.support.v4.widget.ViewDragHelper:
+    private static final java.lang.String TAG
+    public static final int INVALID_POINTER
+    public static final int STATE_IDLE
+    public static final int STATE_DRAGGING
+    public static final int STATE_SETTLING
+    public static final int EDGE_LEFT
+    public static final int EDGE_RIGHT
+    public static final int EDGE_TOP
+    public static final int EDGE_BOTTOM
+    public static final int EDGE_ALL
+    public static final int DIRECTION_HORIZONTAL
+    public static final int DIRECTION_VERTICAL
+    public static final int DIRECTION_ALL
+    private static final int EDGE_SIZE
+    private static final int BASE_SETTLE_DURATION
+    private static final int MAX_SETTLE_DURATION
+    347:347:public static android.support.v4.widget.ViewDragHelper create(android.view.ViewGroup,android.support.v4.widget.ViewDragHelper$Callback)
+    360:362:public static android.support.v4.widget.ViewDragHelper create(android.view.ViewGroup,float,android.support.v4.widget.ViewDragHelper$Callback)
+    373:392:private ViewDragHelper(android.content.Context,android.view.ViewGroup,android.support.v4.widget.ViewDragHelper$Callback)
+    401:402:public void setMinVelocity(float)
+    412:412:public float getMinVelocity()
+    437:438:public void setEdgeTrackingEnabled(int)
+    483:483:public int getActivePointerId()
+    690:701:public void flingCapturedView(int,int,int,int)
+    908:927:protected boolean canScroll(android.view.View,boolean,int,int,int,int)
+    1331:1337:public boolean isEdgeTouched(int)
+    1351:1351:public boolean isEdgeTouched(int,int)
+android.support.v4.widget.ViewDragHelper$2
+android.support.v4.widget.ViewDragHelper$Callback:
+    148:148:public ViewDragHelper$Callback()
+com.fasterxml.jackson.core.Base64Variant
+com.fasterxml.jackson.core.Base64Variants
+com.fasterxml.jackson.core.FormatSchema
+com.fasterxml.jackson.core.JsonEncoding
+com.fasterxml.jackson.core.JsonFactory
+com.fasterxml.jackson.core.JsonFactory$Feature
+com.fasterxml.jackson.core.JsonGenerationException
+com.fasterxml.jackson.core.JsonGenerator
+com.fasterxml.jackson.core.JsonGenerator$Feature
+com.fasterxml.jackson.core.JsonLocation
+com.fasterxml.jackson.core.JsonParseException
+com.fasterxml.jackson.core.JsonParser
+com.fasterxml.jackson.core.JsonParser$1
+com.fasterxml.jackson.core.JsonParser$Feature
+com.fasterxml.jackson.core.JsonParser$NumberType
+com.fasterxml.jackson.core.JsonProcessingException
+com.fasterxml.jackson.core.JsonStreamContext
+com.fasterxml.jackson.core.JsonToken
+com.fasterxml.jackson.core.ObjectCodec
+com.fasterxml.jackson.core.PrettyPrinter
+com.fasterxml.jackson.core.SerializableString
+com.fasterxml.jackson.core.TreeNode
+com.fasterxml.jackson.core.Version
+com.fasterxml.jackson.core.Versioned
+com.fasterxml.jackson.core.base.GeneratorBase
+com.fasterxml.jackson.core.base.GeneratorBase$1
+com.fasterxml.jackson.core.base.ParserBase
+com.fasterxml.jackson.core.base.ParserMinimalBase
+com.fasterxml.jackson.core.base.ParserMinimalBase$1
+com.fasterxml.jackson.core.format.DataFormatDetector
+com.fasterxml.jackson.core.format.DataFormatMatcher
+com.fasterxml.jackson.core.format.InputAccessor
+com.fasterxml.jackson.core.format.InputAccessor$Std
+com.fasterxml.jackson.core.format.MatchStrength
+com.fasterxml.jackson.core.io.BaseReader
+com.fasterxml.jackson.core.io.CharTypes
+com.fasterxml.jackson.core.io.CharacterEscapes
+com.fasterxml.jackson.core.io.IOContext
+com.fasterxml.jackson.core.io.InputDecorator
+com.fasterxml.jackson.core.io.JsonStringEncoder
+com.fasterxml.jackson.core.io.MergedStream
+com.fasterxml.jackson.core.io.NumberInput
+com.fasterxml.jackson.core.io.NumberOutput
+com.fasterxml.jackson.core.io.OutputDecorator
+com.fasterxml.jackson.core.io.SegmentedStringWriter
+com.fasterxml.jackson.core.io.SerializedString
+com.fasterxml.jackson.core.io.UTF32Reader
+com.fasterxml.jackson.core.io.UTF8Writer
+com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper
+com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper$1
+com.fasterxml.jackson.core.json.CoreVersion
+com.fasterxml.jackson.core.json.JsonGeneratorImpl
+com.fasterxml.jackson.core.json.JsonReadContext
+com.fasterxml.jackson.core.json.JsonWriteContext
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser$1
+com.fasterxml.jackson.core.json.UTF8JsonGenerator
+com.fasterxml.jackson.core.json.UTF8StreamJsonParser
+com.fasterxml.jackson.core.json.UTF8StreamJsonParser$1
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator
+com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer
+com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$Bucket
+com.fasterxml.jackson.core.sym.BytesToNameCanonicalizer$TableInfo
+com.fasterxml.jackson.core.sym.CharsToNameCanonicalizer
+com.fasterxml.jackson.core.sym.CharsToNameCanonicalizer$Bucket
+com.fasterxml.jackson.core.sym.Name
+com.fasterxml.jackson.core.sym.Name1
+com.fasterxml.jackson.core.sym.Name2
+com.fasterxml.jackson.core.sym.Name3
+com.fasterxml.jackson.core.sym.NameN
+com.fasterxml.jackson.core.type.ResolvedType
+com.fasterxml.jackson.core.type.TypeReference
+com.fasterxml.jackson.core.util.BufferRecycler
+com.fasterxml.jackson.core.util.BufferRecycler$ByteBufferType
+com.fasterxml.jackson.core.util.BufferRecycler$CharBufferType
+com.fasterxml.jackson.core.util.ByteArrayBuilder
+com.fasterxml.jackson.core.util.DefaultPrettyPrinter
+com.fasterxml.jackson.core.util.DefaultPrettyPrinter$FixedSpaceIndenter
+com.fasterxml.jackson.core.util.DefaultPrettyPrinter$Indenter
+com.fasterxml.jackson.core.util.DefaultPrettyPrinter$Lf2SpacesIndenter
+com.fasterxml.jackson.core.util.DefaultPrettyPrinter$NopIndenter
+com.fasterxml.jackson.core.util.Instantiatable
+com.fasterxml.jackson.core.util.InternCache
+com.fasterxml.jackson.core.util.JsonGeneratorDelegate
+com.fasterxml.jackson.core.util.JsonParserDelegate
+com.fasterxml.jackson.core.util.JsonParserSequence
+com.fasterxml.jackson.core.util.MinimalPrettyPrinter
+com.fasterxml.jackson.core.util.TextBuffer
+com.fasterxml.jackson.core.util.VersionUtil
+com.google.android.gcm.GCMBaseIntentService
+com.google.android.gcm.GCMBroadcastReceiver
+com.google.android.gcm.GCMConstants
+com.google.android.gcm.GCMRegistrar
+com.google.api.client.auth.oauth.AbstractOAuthGetToken
+com.google.api.client.auth.oauth.OAuthAuthorizeTemporaryTokenUrl
+com.google.api.client.auth.oauth.OAuthCallbackUrl
+com.google.api.client.auth.oauth.OAuthCredentialsResponse
+com.google.api.client.auth.oauth.OAuthGetAccessToken
+com.google.api.client.auth.oauth.OAuthGetTemporaryToken
+com.google.api.client.auth.oauth.OAuthHmacSigner
+com.google.api.client.auth.oauth.OAuthParameters
+com.google.api.client.auth.oauth.OAuthRsaSigner
+com.google.api.client.auth.oauth.OAuthSigner
+com.google.api.client.auth.oauth.package-info
+com.google.api.client.auth.oauth2.AuthorizationCodeFlow
+com.google.api.client.auth.oauth2.AuthorizationCodeFlow$Builder
+com.google.api.client.auth.oauth2.AuthorizationCodeFlow$CredentialCreatedListener
+com.google.api.client.auth.oauth2.AuthorizationCodeRequestUrl
+com.google.api.client.auth.oauth2.AuthorizationCodeResponseUrl
+com.google.api.client.auth.oauth2.AuthorizationCodeTokenRequest
+com.google.api.client.auth.oauth2.AuthorizationRequestUrl
+com.google.api.client.auth.oauth2.BearerToken
+com.google.api.client.auth.oauth2.BearerToken$AuthorizationHeaderAccessMethod
+com.google.api.client.auth.oauth2.BearerToken$FormEncodedBodyAccessMethod
+com.google.api.client.auth.oauth2.BearerToken$QueryParameterAccessMethod
+com.google.api.client.auth.oauth2.BrowserClientRequestUrl
+com.google.api.client.auth.oauth2.ClientCredentialsTokenRequest
+com.google.api.client.auth.oauth2.ClientParametersAuthentication
+com.google.api.client.auth.oauth2.Credential
+com.google.api.client.auth.oauth2.Credential$AccessMethod
+com.google.api.client.auth.oauth2.Credential$Builder
+com.google.api.client.auth.oauth2.CredentialRefreshListener
+com.google.api.client.auth.oauth2.CredentialStore
+com.google.api.client.auth.oauth2.CredentialStoreRefreshListener
+com.google.api.client.auth.oauth2.DataStoreCredentialRefreshListener
+com.google.api.client.auth.oauth2.MemoryCredentialStore
+com.google.api.client.auth.oauth2.MemoryPersistedCredential
+com.google.api.client.auth.oauth2.PasswordTokenRequest
+com.google.api.client.auth.oauth2.RefreshTokenRequest
+com.google.api.client.auth.oauth2.StoredCredential
+com.google.api.client.auth.oauth2.TokenErrorResponse
+com.google.api.client.auth.oauth2.TokenRequest
+com.google.api.client.auth.oauth2.TokenRequest$1
+com.google.api.client.auth.oauth2.TokenRequest$1$1
+com.google.api.client.auth.oauth2.TokenResponse
+com.google.api.client.auth.oauth2.TokenResponseException
+com.google.api.client.auth.openidconnect.IdToken
+com.google.api.client.auth.openidconnect.IdToken$Payload
+com.google.api.client.auth.openidconnect.IdTokenResponse
+com.google.api.client.auth.openidconnect.IdTokenVerifier
+com.google.api.client.auth.openidconnect.IdTokenVerifier$Builder
+com.google.api.client.auth.openidconnect.package-info
+com.google.api.client.extensions.android.AndroidUtils
+com.google.api.client.extensions.android.http.AndroidHttp
+com.google.api.client.extensions.android.http.package-info
+com.google.api.client.extensions.android.json.AndroidJsonFactory
+com.google.api.client.extensions.android.json.AndroidJsonGenerator
+com.google.api.client.extensions.android.json.AndroidJsonGenerator$StringNumber
+com.google.api.client.extensions.android.json.AndroidJsonParser
+com.google.api.client.extensions.android.json.AndroidJsonParser$1
+com.google.api.client.extensions.android.json.package-info
+com.google.api.client.extensions.android.package-info
+com.google.api.client.googleapis.GoogleUtils
+com.google.api.client.googleapis.MethodOverride
+com.google.api.client.googleapis.MethodOverride$Builder
+com.google.api.client.googleapis.apache.GoogleApacheHttpTransport
+com.google.api.client.googleapis.auth.clientlogin.AuthKeyValueParser
+com.google.api.client.googleapis.auth.clientlogin.ClientLogin
+com.google.api.client.googleapis.auth.clientlogin.ClientLogin$ErrorInfo
+com.google.api.client.googleapis.auth.clientlogin.ClientLogin$Response
+com.google.api.client.googleapis.auth.clientlogin.ClientLoginResponseException
+com.google.api.client.googleapis.auth.clientlogin.package-info
+com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeFlow
+com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeFlow$Builder
+com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeRequestUrl
+com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeTokenRequest
+com.google.api.client.googleapis.auth.oauth2.GoogleBrowserClientRequestUrl
+com.google.api.client.googleapis.auth.oauth2.GoogleClientSecrets
+com.google.api.client.googleapis.auth.oauth2.GoogleClientSecrets$Details
+com.google.api.client.googleapis.auth.oauth2.GoogleCredential
+com.google.api.client.googleapis.auth.oauth2.GoogleCredential$Builder
+com.google.api.client.googleapis.auth.oauth2.GoogleIdToken
+com.google.api.client.googleapis.auth.oauth2.GoogleIdToken$Payload
+com.google.api.client.googleapis.auth.oauth2.GoogleIdTokenVerifier
+com.google.api.client.googleapis.auth.oauth2.GoogleIdTokenVerifier$Builder
+com.google.api.client.googleapis.auth.oauth2.GoogleOAuthConstants
+com.google.api.client.googleapis.auth.oauth2.GoogleRefreshTokenRequest
+com.google.api.client.googleapis.auth.oauth2.GoogleTokenResponse
+com.google.api.client.googleapis.batch.BatchCallback
+com.google.api.client.googleapis.batch.BatchRequest
+com.google.api.client.googleapis.batch.BatchRequest$BatchInterceptor
+com.google.api.client.googleapis.batch.BatchRequest$RequestInfo
+com.google.api.client.googleapis.batch.BatchUnparsedResponse
+com.google.api.client.googleapis.batch.BatchUnparsedResponse$FakeLowLevelHttpRequest
+com.google.api.client.googleapis.batch.BatchUnparsedResponse$FakeLowLevelHttpResponse
+com.google.api.client.googleapis.batch.BatchUnparsedResponse$FakeResponseHttpTransport
+com.google.api.client.googleapis.batch.HttpRequestContent
+com.google.api.client.googleapis.batch.json.JsonBatchCallback
+com.google.api.client.googleapis.compute.ComputeCredential
+com.google.api.client.googleapis.compute.ComputeCredential$Builder
+com.google.api.client.googleapis.compute.package-info
+com.google.api.client.googleapis.extensions.android.accounts.GoogleAccountManager
+com.google.api.client.googleapis.extensions.android.accounts.package-info
+com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential
+com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential$RequestHandler
+com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAuthIOException
+com.google.api.client.googleapis.extensions.android.gms.auth.GooglePlayServicesAvailabilityIOException
+com.google.api.client.googleapis.extensions.android.gms.auth.UserRecoverableAuthIOException
+com.google.api.client.googleapis.extensions.android.gms.auth.package-info
+com.google.api.client.googleapis.javanet.GoogleNetHttpTransport
+com.google.api.client.googleapis.json.GoogleJsonError
+com.google.api.client.googleapis.json.GoogleJsonError$ErrorInfo
+com.google.api.client.googleapis.json.GoogleJsonErrorContainer
+com.google.api.client.googleapis.json.GoogleJsonResponseException
+com.google.api.client.googleapis.media.MediaHttpDownloader
+com.google.api.client.googleapis.media.MediaHttpDownloader$DownloadState
+com.google.api.client.googleapis.media.MediaHttpDownloaderProgressListener
+com.google.api.client.googleapis.media.MediaHttpUploader
+com.google.api.client.googleapis.media.MediaHttpUploader$UploadState
+com.google.api.client.googleapis.media.MediaHttpUploaderProgressListener
+com.google.api.client.googleapis.media.MediaUploadErrorHandler
+com.google.api.client.googleapis.media.MediaUploadExponentialBackOffPolicy
+com.google.api.client.googleapis.notifications.AbstractNotification
+com.google.api.client.googleapis.notifications.NotificationUtils
+com.google.api.client.googleapis.notifications.ResourceStates
+com.google.api.client.googleapis.notifications.StoredChannel
+com.google.api.client.googleapis.notifications.TypedNotification
+com.google.api.client.googleapis.notifications.TypedNotificationCallback
+com.google.api.client.googleapis.notifications.UnparsedNotification
+com.google.api.client.googleapis.notifications.UnparsedNotificationCallback
+com.google.api.client.googleapis.notifications.json.JsonNotificationCallback
+com.google.api.client.googleapis.notifications.json.package-info
+com.google.api.client.googleapis.notifications.package-info
+com.google.api.client.googleapis.services.AbstractGoogleClient
+com.google.api.client.googleapis.services.AbstractGoogleClient$Builder
+com.google.api.client.googleapis.services.AbstractGoogleClientRequest
+com.google.api.client.googleapis.services.AbstractGoogleClientRequest$1
+com.google.api.client.googleapis.services.CommonGoogleClientRequestInitializer
+com.google.api.client.googleapis.services.GoogleClientRequestInitializer
+com.google.api.client.googleapis.services.json.AbstractGoogleJsonClient
+com.google.api.client.googleapis.services.json.AbstractGoogleJsonClient$Builder
+com.google.api.client.googleapis.services.json.AbstractGoogleJsonClientRequest
+com.google.api.client.googleapis.services.json.CommonGoogleJsonClientRequestInitializer
+com.google.api.client.googleapis.subscriptions.EventTypes
+com.google.api.client.googleapis.subscriptions.MemorySubscriptionStore
+com.google.api.client.googleapis.subscriptions.Notification
+com.google.api.client.googleapis.subscriptions.NotificationCallback
+com.google.api.client.googleapis.subscriptions.NotificationHeaders
+com.google.api.client.googleapis.subscriptions.StoredSubscription
+com.google.api.client.googleapis.subscriptions.SubscriptionStore
+com.google.api.client.googleapis.subscriptions.TypedNotification
+com.google.api.client.googleapis.subscriptions.TypedNotificationCallback
+com.google.api.client.googleapis.subscriptions.UnparsedNotification
+com.google.api.client.googleapis.subscriptions.json.JsonNotificationCallback
+com.google.api.client.googleapis.subscriptions.json.package-info
+com.google.api.client.googleapis.subscriptions.package-info
+com.google.api.client.googleapis.testing.notifications.MockUnparsedNotificationCallback
+com.google.api.client.googleapis.testing.notifications.package-info
+com.google.api.client.googleapis.testing.services.MockGoogleClient
+com.google.api.client.googleapis.testing.services.MockGoogleClient$Builder
+com.google.api.client.googleapis.testing.services.MockGoogleClientRequest
+com.google.api.client.googleapis.testing.services.json.MockGoogleJsonClient
+com.google.api.client.googleapis.testing.services.json.MockGoogleJsonClient$Builder
+com.google.api.client.googleapis.testing.services.json.MockGoogleJsonClientRequest
+com.google.api.client.googleapis.testing.services.json.package-info
+com.google.api.client.googleapis.testing.services.package-info
+com.google.api.client.googleapis.testing.subscriptions.MockNotificationCallback
+com.google.api.client.googleapis.testing.subscriptions.package-info
+com.google.api.client.googleapis.xml.atom.AtomPatchContent
+com.google.api.client.googleapis.xml.atom.AtomPatchRelativeToOriginalContent
+com.google.api.client.googleapis.xml.atom.GoogleAtom
+com.google.api.client.googleapis.xml.atom.GoogleAtom$FieldsMask
+com.google.api.client.googleapis.xml.atom.MultiKindFeedParser
+com.google.api.client.googleapis.xml.atom.package-info
+com.google.api.client.http.AbstractHttpContent
+com.google.api.client.http.AbstractInputStreamContent
+com.google.api.client.http.BackOffPolicy
+com.google.api.client.http.BasicAuthentication
+com.google.api.client.http.ByteArrayContent
+com.google.api.client.http.EmptyContent
+com.google.api.client.http.ExponentialBackOffPolicy
+com.google.api.client.http.ExponentialBackOffPolicy$Builder
+com.google.api.client.http.FileContent
+com.google.api.client.http.GZipEncoding
+com.google.api.client.http.GZipEncoding$1
+com.google.api.client.http.GenericUrl
+com.google.api.client.http.HttpBackOffIOExceptionHandler
+com.google.api.client.http.HttpBackOffUnsuccessfulResponseHandler
+com.google.api.client.http.HttpBackOffUnsuccessfulResponseHandler$BackOffRequired
+com.google.api.client.http.HttpBackOffUnsuccessfulResponseHandler$BackOffRequired$1
+com.google.api.client.http.HttpBackOffUnsuccessfulResponseHandler$BackOffRequired$2
+com.google.api.client.http.HttpContent
+com.google.api.client.http.HttpEncoding
+com.google.api.client.http.HttpEncodingStreamingContent
+com.google.api.client.http.HttpExecuteInterceptor
+com.google.api.client.http.HttpHeaders
+com.google.api.client.http.HttpHeaders$HeaderParsingFakeLevelHttpRequest
+com.google.api.client.http.HttpHeaders$ParseHeaderState
+com.google.api.client.http.HttpIOExceptionHandler
+com.google.api.client.http.HttpMediaType
+com.google.api.client.http.HttpMethods
+com.google.api.client.http.HttpRequest
+com.google.api.client.http.HttpRequest$1
+com.google.api.client.http.HttpRequestFactory
+com.google.api.client.http.HttpRequestInitializer
+com.google.api.client.http.HttpResponse
+com.google.api.client.http.HttpResponseException
+com.google.api.client.http.HttpResponseException$Builder
+com.google.api.client.http.HttpResponseInterceptor
+com.google.api.client.http.HttpStatusCodes
+com.google.api.client.http.HttpTransport
+com.google.api.client.http.HttpUnsuccessfulResponseHandler
+com.google.api.client.http.InputStreamContent
+com.google.api.client.http.LowLevelHttpRequest
+com.google.api.client.http.LowLevelHttpResponse
+com.google.api.client.http.MultipartContent
+com.google.api.client.http.MultipartContent$Part
+com.google.api.client.http.UriTemplate
+com.google.api.client.http.UriTemplate$CompositeOutput
+com.google.api.client.http.UrlEncodedContent
+com.google.api.client.http.UrlEncodedParser
+com.google.api.client.http.apache.ApacheHttpRequest
+com.google.api.client.http.apache.ApacheHttpResponse
+com.google.api.client.http.apache.ApacheHttpTransport
+com.google.api.client.http.apache.ApacheHttpTransport$Builder
+com.google.api.client.http.apache.ContentEntity
+com.google.api.client.http.apache.HttpExtensionMethod
+com.google.api.client.http.apache.SSLSocketFactoryExtension
+com.google.api.client.http.javanet.NetHttpRequest
+com.google.api.client.http.javanet.NetHttpResponse
+com.google.api.client.http.javanet.NetHttpTransport
+com.google.api.client.http.javanet.NetHttpTransport$Builder
+com.google.api.client.http.json.JsonHttpContent
+com.google.api.client.http.xml.AbstractXmlHttpContent
+com.google.api.client.http.xml.XmlHttpContent
+com.google.api.client.http.xml.atom.AtomContent
+com.google.api.client.http.xml.atom.AtomFeedParser
+com.google.api.client.json.CustomizeJsonParser
+com.google.api.client.json.GenericJson
+com.google.api.client.json.Json
+com.google.api.client.json.JsonFactory
+com.google.api.client.json.JsonGenerator
+com.google.api.client.json.JsonObjectParser
+com.google.api.client.json.JsonObjectParser$Builder
+com.google.api.client.json.JsonParser
+com.google.api.client.json.JsonParser$1
+com.google.api.client.json.JsonPolymorphicTypeMap
+com.google.api.client.json.JsonPolymorphicTypeMap$TypeDef
+com.google.api.client.json.JsonString
+com.google.api.client.json.JsonToken
+com.google.api.client.json.gson.GsonFactory
+com.google.api.client.json.gson.GsonFactory$InstanceHolder
+com.google.api.client.json.gson.GsonGenerator
+com.google.api.client.json.gson.GsonGenerator$StringNumber
+com.google.api.client.json.gson.GsonParser
+com.google.api.client.json.gson.GsonParser$1
+com.google.api.client.json.jackson.JacksonFactory
+com.google.api.client.json.jackson.JacksonFactory$1
+com.google.api.client.json.jackson.JacksonGenerator
+com.google.api.client.json.jackson.JacksonParser
+com.google.api.client.json.jackson2.JacksonFactory
+com.google.api.client.json.jackson2.JacksonFactory$1
+com.google.api.client.json.jackson2.JacksonFactory$InstanceHolder
+com.google.api.client.json.jackson2.JacksonGenerator
+com.google.api.client.json.jackson2.JacksonParser
+com.google.api.client.json.rpc2.JsonRpcRequest
+com.google.api.client.json.webtoken.JsonWebSignature
+com.google.api.client.json.webtoken.JsonWebSignature$Header
+com.google.api.client.json.webtoken.JsonWebSignature$Parser
+com.google.api.client.json.webtoken.JsonWebToken
+com.google.api.client.json.webtoken.JsonWebToken$Header
+com.google.api.client.json.webtoken.JsonWebToken$Payload
+com.google.api.client.repackaged.com.google.common.annotations.Beta
+com.google.api.client.repackaged.com.google.common.annotations.GwtCompatible
+com.google.api.client.repackaged.com.google.common.annotations.VisibleForTesting
+com.google.api.client.repackaged.com.google.common.base.Joiner
+com.google.api.client.repackaged.com.google.common.base.Joiner$1
+com.google.api.client.repackaged.com.google.common.base.Joiner$2
+com.google.api.client.repackaged.com.google.common.base.Joiner$3
+com.google.api.client.repackaged.com.google.common.base.Joiner$MapJoiner
+com.google.api.client.repackaged.com.google.common.base.Objects
+com.google.api.client.repackaged.com.google.common.base.Objects$1
+com.google.api.client.repackaged.com.google.common.base.Objects$ToStringHelper
+com.google.api.client.repackaged.com.google.common.base.Objects$ToStringHelper$ValueHolder
+com.google.api.client.repackaged.com.google.common.base.Preconditions
+com.google.api.client.repackaged.com.google.common.base.Strings
+com.google.api.client.repackaged.com.google.common.base.Throwables
+com.google.api.client.repackaged.org.apache.commons.codec.BinaryDecoder
+com.google.api.client.repackaged.org.apache.commons.codec.BinaryEncoder
+com.google.api.client.repackaged.org.apache.commons.codec.Decoder
+com.google.api.client.repackaged.org.apache.commons.codec.DecoderException
+com.google.api.client.repackaged.org.apache.commons.codec.Encoder
+com.google.api.client.repackaged.org.apache.commons.codec.EncoderException
+com.google.api.client.repackaged.org.apache.commons.codec.binary.Base64
+com.google.api.client.repackaged.org.apache.commons.codec.binary.BaseNCodec
+com.google.api.client.repackaged.org.apache.commons.codec.binary.StringUtils
+com.google.api.client.testing.http.FixedClock
+com.google.api.client.testing.http.HttpTesting
+com.google.api.client.testing.http.MockHttpContent
+com.google.api.client.testing.http.MockHttpTransport
+com.google.api.client.testing.http.MockHttpTransport$Builder
+com.google.api.client.testing.http.MockHttpUnsuccessfulResponseHandler
+com.google.api.client.testing.http.MockLowLevelHttpRequest
+com.google.api.client.testing.http.MockLowLevelHttpResponse
+com.google.api.client.testing.http.apache.MockHttpClient
+com.google.api.client.testing.http.apache.MockHttpClient$1
+com.google.api.client.testing.http.javanet.MockHttpURLConnection
+com.google.api.client.testing.json.MockJsonFactory
+com.google.api.client.testing.json.MockJsonGenerator
+com.google.api.client.testing.json.MockJsonParser
+com.google.api.client.testing.util.LogRecordingHandler
+com.google.api.client.testing.util.MockBackOff
+com.google.api.client.testing.util.MockSleeper
+com.google.api.client.testing.util.SecurityTestUtils
+com.google.api.client.testing.util.TestableByteArrayInputStream
+com.google.api.client.testing.util.TestableByteArrayOutputStream
+com.google.api.client.util.ArrayMap
+com.google.api.client.util.ArrayMap$Entry
+com.google.api.client.util.ArrayMap$EntryIterator
+com.google.api.client.util.ArrayMap$EntrySet
+com.google.api.client.util.ArrayValueMap
+com.google.api.client.util.ArrayValueMap$ArrayValue
+com.google.api.client.util.BackOff
+com.google.api.client.util.BackOff$1
+com.google.api.client.util.BackOff$2
+com.google.api.client.util.BackOffUtils
+com.google.api.client.util.Base64
+com.google.api.client.util.Beta
+com.google.api.client.util.ByteArrayStreamingContent
+com.google.api.client.util.ByteCountingOutputStream
+com.google.api.client.util.ByteStreams
+com.google.api.client.util.ByteStreams$LimitedInputStream
+com.google.api.client.util.Charsets
+com.google.api.client.util.ClassInfo
+com.google.api.client.util.ClassInfo$1
+com.google.api.client.util.Clock
+com.google.api.client.util.Clock$1
+com.google.api.client.util.Collections2
+com.google.api.client.util.Data
+com.google.api.client.util.DataMap
+com.google.api.client.util.DataMap$Entry
+com.google.api.client.util.DataMap$EntryIterator
+com.google.api.client.util.DataMap$EntrySet
+com.google.api.client.util.DateTime
+com.google.api.client.util.ExponentialBackOff
+com.google.api.client.util.ExponentialBackOff$Builder
+com.google.api.client.util.FieldInfo
+com.google.api.client.util.GenericData
+com.google.api.client.util.GenericData$EntryIterator
+com.google.api.client.util.GenericData$EntrySet
+com.google.api.client.util.GenericData$Flags
+com.google.api.client.util.IOUtils
+com.google.api.client.util.Joiner
+com.google.api.client.util.Key
+com.google.api.client.util.Lists
+com.google.api.client.util.LoggingByteArrayOutputStream
+com.google.api.client.util.LoggingInputStream
+com.google.api.client.util.LoggingOutputStream
+com.google.api.client.util.LoggingStreamingContent
+com.google.api.client.util.Maps
+com.google.api.client.util.NanoClock
+com.google.api.client.util.NanoClock$1
+com.google.api.client.util.NullValue
+com.google.api.client.util.ObjectParser
+com.google.api.client.util.Objects
+com.google.api.client.util.Objects$ToStringHelper
+com.google.api.client.util.PemReader
+com.google.api.client.util.PemReader$Section
+com.google.api.client.util.Preconditions
+com.google.api.client.util.SecurityUtils
+com.google.api.client.util.Sets
+com.google.api.client.util.Sleeper
+com.google.api.client.util.Sleeper$1
+com.google.api.client.util.SslUtils
+com.google.api.client.util.SslUtils$1
+com.google.api.client.util.SslUtils$2
+com.google.api.client.util.StreamingContent
+com.google.api.client.util.StringUtils
+com.google.api.client.util.Strings
+com.google.api.client.util.Throwables
+com.google.api.client.util.Types
+com.google.api.client.util.Types$1
+com.google.api.client.util.Types$1$1
+com.google.api.client.util.Value
+com.google.api.client.util.escape.CharEscapers
+com.google.api.client.util.escape.Escaper
+com.google.api.client.util.escape.PercentEscaper
+com.google.api.client.util.escape.Platform
+com.google.api.client.util.escape.Platform$1
+com.google.api.client.util.escape.UnicodeEscaper
+com.google.api.client.util.store.AbstractDataStore
+com.google.api.client.util.store.AbstractDataStoreFactory
+com.google.api.client.util.store.AbstractMemoryDataStore
+com.google.api.client.util.store.DataStore
+com.google.api.client.util.store.DataStoreFactory
+com.google.api.client.util.store.DataStoreUtils
+com.google.api.client.util.store.FileDataStoreFactory
+com.google.api.client.util.store.FileDataStoreFactory$FileDataStore
+com.google.api.client.util.store.MemoryDataStoreFactory
+com.google.api.client.util.store.MemoryDataStoreFactory$InstanceHolder
+com.google.api.client.util.store.MemoryDataStoreFactory$MemoryDataStore
+com.google.api.client.xml.GenericXml
+com.google.api.client.xml.Xml
+com.google.api.client.xml.Xml$CustomizeParser
+com.google.api.client.xml.XmlNamespaceDictionary
+com.google.api.client.xml.XmlNamespaceDictionary$ElementSerializer
+com.google.api.client.xml.XmlObjectParser
+com.google.api.client.xml.atom.AbstractAtomFeedParser
+com.google.api.client.xml.atom.Atom
+com.google.api.client.xml.atom.Atom$StopAtAtomEntry
+com.google.gson.DefaultDateTypeAdapter
+com.google.gson.ExclusionStrategy
+com.google.gson.FieldAttributes
+com.google.gson.FieldNamingPolicy
+com.google.gson.FieldNamingPolicy$1
+com.google.gson.FieldNamingPolicy$2
+com.google.gson.FieldNamingPolicy$3
+com.google.gson.FieldNamingPolicy$4
+com.google.gson.FieldNamingPolicy$5
+com.google.gson.FieldNamingStrategy
+com.google.gson.Gson
+com.google.gson.Gson$1
+com.google.gson.Gson$2
+com.google.gson.Gson$3
+com.google.gson.Gson$4
+com.google.gson.Gson$5
+com.google.gson.Gson$6
+com.google.gson.Gson$7
+com.google.gson.Gson$FutureTypeAdapter
+com.google.gson.GsonBuilder
+com.google.gson.InstanceCreator
+com.google.gson.JsonArray
+com.google.gson.JsonDeserializationContext
+com.google.gson.JsonDeserializer
+com.google.gson.JsonElement
+com.google.gson.JsonIOException
+com.google.gson.JsonNull
+com.google.gson.JsonObject
+com.google.gson.JsonParseException
+com.google.gson.JsonParser
+com.google.gson.JsonPrimitive
+com.google.gson.JsonSerializationContext
+com.google.gson.JsonSerializer
+com.google.gson.JsonStreamParser
+com.google.gson.JsonSyntaxException
+com.google.gson.LongSerializationPolicy
+com.google.gson.LongSerializationPolicy$1
+com.google.gson.LongSerializationPolicy$2
+com.google.gson.TreeTypeAdapter
+com.google.gson.TreeTypeAdapter$1
+com.google.gson.TreeTypeAdapter$SingleTypeFactory
+com.google.gson.TypeAdapter
+com.google.gson.TypeAdapter$1
+com.google.gson.TypeAdapterFactory
+com.google.gson.annotations.Expose
+com.google.gson.annotations.SerializedName
+com.google.gson.annotations.Since
+com.google.gson.annotations.Until
+com.google.gson.internal.$Gson$Preconditions
+com.google.gson.internal.$Gson$Types
+com.google.gson.internal.$Gson$Types$GenericArrayTypeImpl
+com.google.gson.internal.$Gson$Types$ParameterizedTypeImpl
+com.google.gson.internal.$Gson$Types$WildcardTypeImpl
+com.google.gson.internal.ConstructorConstructor
+com.google.gson.internal.ConstructorConstructor$1
+com.google.gson.internal.ConstructorConstructor$2
+com.google.gson.internal.ConstructorConstructor$3
+com.google.gson.internal.ConstructorConstructor$4
+com.google.gson.internal.ConstructorConstructor$5
+com.google.gson.internal.ConstructorConstructor$6
+com.google.gson.internal.ConstructorConstructor$7
+com.google.gson.internal.ConstructorConstructor$8
+com.google.gson.internal.Excluder
+com.google.gson.internal.Excluder$1
+com.google.gson.internal.GsonInternalAccess
+com.google.gson.internal.JsonReaderInternalAccess
+com.google.gson.internal.LazilyParsedNumber
+com.google.gson.internal.ObjectConstructor
+com.google.gson.internal.Pair
+com.google.gson.internal.Primitives
+com.google.gson.internal.Streams
+com.google.gson.internal.Streams$1
+com.google.gson.internal.Streams$AppendableWriter
+com.google.gson.internal.Streams$AppendableWriter$CurrentWrite
+com.google.gson.internal.UnsafeAllocator
+com.google.gson.internal.UnsafeAllocator$1
+com.google.gson.internal.UnsafeAllocator$2
+com.google.gson.internal.UnsafeAllocator$3
+com.google.gson.internal.UnsafeAllocator$4
+com.google.gson.internal.bind.ArrayTypeAdapter
+com.google.gson.internal.bind.ArrayTypeAdapter$1
+com.google.gson.internal.bind.BigDecimalTypeAdapter
+com.google.gson.internal.bind.BigIntegerTypeAdapter
+com.google.gson.internal.bind.CollectionTypeAdapterFactory
+com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter
+com.google.gson.internal.bind.DateTypeAdapter
+com.google.gson.internal.bind.DateTypeAdapter$1
+com.google.gson.internal.bind.JsonTreeReader
+com.google.gson.internal.bind.JsonTreeReader$1
+com.google.gson.internal.bind.JsonTreeWriter
+com.google.gson.internal.bind.JsonTreeWriter$1
+com.google.gson.internal.bind.MapTypeAdapterFactory
+com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter
+com.google.gson.internal.bind.ObjectTypeAdapter
+com.google.gson.internal.bind.ObjectTypeAdapter$1
+com.google.gson.internal.bind.ObjectTypeAdapter$2
+com.google.gson.internal.bind.ReflectiveTypeAdapterFactory
+com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1
+com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter
+com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$BoundField
+com.google.gson.internal.bind.SqlDateTypeAdapter
+com.google.gson.internal.bind.SqlDateTypeAdapter$1
+com.google.gson.internal.bind.TimeTypeAdapter
+com.google.gson.internal.bind.TimeTypeAdapter$1
+com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper
+com.google.gson.internal.bind.TypeAdapters
+com.google.gson.internal.bind.TypeAdapters$1
+com.google.gson.internal.bind.TypeAdapters$10
+com.google.gson.internal.bind.TypeAdapters$11
+com.google.gson.internal.bind.TypeAdapters$12
+com.google.gson.internal.bind.TypeAdapters$13
+com.google.gson.internal.bind.TypeAdapters$14
+com.google.gson.internal.bind.TypeAdapters$15
+com.google.gson.internal.bind.TypeAdapters$16
+com.google.gson.internal.bind.TypeAdapters$17
+com.google.gson.internal.bind.TypeAdapters$18
+com.google.gson.internal.bind.TypeAdapters$19
+com.google.gson.internal.bind.TypeAdapters$2
+com.google.gson.internal.bind.TypeAdapters$20
+com.google.gson.internal.bind.TypeAdapters$20$1
+com.google.gson.internal.bind.TypeAdapters$21
+com.google.gson.internal.bind.TypeAdapters$22
+com.google.gson.internal.bind.TypeAdapters$23
+com.google.gson.internal.bind.TypeAdapters$24
+com.google.gson.internal.bind.TypeAdapters$25
+com.google.gson.internal.bind.TypeAdapters$26
+com.google.gson.internal.bind.TypeAdapters$27
+com.google.gson.internal.bind.TypeAdapters$28
+com.google.gson.internal.bind.TypeAdapters$29
+com.google.gson.internal.bind.TypeAdapters$3
+com.google.gson.internal.bind.TypeAdapters$30
+com.google.gson.internal.bind.TypeAdapters$4
+com.google.gson.internal.bind.TypeAdapters$5
+com.google.gson.internal.bind.TypeAdapters$6
+com.google.gson.internal.bind.TypeAdapters$7
+com.google.gson.internal.bind.TypeAdapters$8
+com.google.gson.internal.bind.TypeAdapters$9
+com.google.gson.internal.bind.TypeAdapters$EnumTypeAdapter
+com.google.gson.reflect.TypeToken
+com.google.gson.stream.JsonReader
+com.google.gson.stream.JsonReader$1
+com.google.gson.stream.JsonReader$2
+com.google.gson.stream.JsonScope
+com.google.gson.stream.JsonToken
+com.google.gson.stream.JsonWriter
+com.google.gson.stream.JsonWriter$1
+com.google.gson.stream.MalformedJsonException
+com.google.gson.stream.StringPool
+com.saulpower.piechart.adapter.BaseExpandablePieChartAdapter
+com.saulpower.piechart.adapter.PieChartBridgeAdapter
+com.saulpower.piechart.adapter.PieChartChildAdapter
+com.saulpower.piechart.adapter.PieChartGroupAdapter
+com.saulpower.piechart.extra.Constant:
+    public static final java.lang.String EXTRA_ACCOUNT_ID
+    public static final java.lang.String EXTRA_ID
+    public static final java.lang.String EXTRA_CATEGORY_ID
+    public static final java.lang.String EXTRA_FRAGMENT
+    public static final java.lang.String EXTRA_POSITION
+    public static final java.lang.String EXTRA_POSITION_X
+    public static final java.lang.String EXTRA_POSITION_Y
+    public static final java.lang.String EXTRA_SOURCE_CODE
+    public static final java.lang.String EXTRA_TXN_TYPE
+    public static final java.lang.String EXTRA_VALUES
+    public static final int CODE_CATEGORY_LIST
+    public static final int CODE_CATEGORY_DETAIL
+    public static final int CODE_TAG_DETAIL
+    public static final int FLAG_BANK_USER_CREATED
+    public static final java.lang.String KEY_ACCOUNTS
+    public static final java.lang.String KEY_ACCOUNT_GUID
+    public static final java.lang.String KEY_ACCOUNT_TYPE
+    public static final java.lang.String KEY_ACCOUNTTYPE
+    public static final java.lang.String KEY_ACCOUNT_NAME
+    public static final java.lang.String KEY_ACCOUNT_TYPE_ID
+    public static final java.lang.String KEY_AMOUNT
+    public static final java.lang.String KEY_ASSOCIATION_DESTROYED
+    public static final java.lang.String KEY_BANK_ACCOUNT_ID
+    public static final java.lang.String KEY_BUDGETS
+    public static final java.lang.String KEY_CATEGORIES
+    public static final java.lang.String KEY_CATEGORY_GUID
+    public static final java.lang.String KEY_CLASSID
+    public static final java.lang.String KEY_CREATED
+    public static final java.lang.String KEY_CREDENTIALS
+    public static final java.lang.String KEY_CREDIT_LIMIT
+    public static final java.lang.String KEY_CUSTOM_FIELDS
+    public static final java.lang.String KEY_BALANCE
+    public static final java.lang.String KEY_DATE
+    public static final java.lang.String KEY_DAY_DUE
+    public static final java.lang.String KEY_DESCRIPTION
+    public static final java.lang.String KEY_DELETED
+    public static final java.lang.String KEY_DEVICE
+    public static final java.lang.String KEY_DUPLICATE
+    public static final java.lang.String KEY_EXTERNAL_ID
+    public static final java.lang.String KEY_FLAGS
+    public static final java.lang.String KEY_FULL_SYNC
+    public static final java.lang.String KEY_GUID
+    public static final java.lang.String KEY_HAS_BEEN_VIEWED
+    public static final java.lang.String KEY_HAS_PREVIOUS
+    public static final java.lang.String KEY_ID
+    public static final java.lang.String KEY_INCOME
+    public static final java.lang.String KEY_INSTITUTION
+    public static final java.lang.String KEY_INSTITUTION_GUID
+    public static final java.lang.String KEY_INSTITUTION_NAME
+    public static final java.lang.String KEY_INSTRUCTIONS
+    public static final java.lang.String KEY_INTEREST_RATE
+    public static final java.lang.String KEY_ISDELETED
+    public static final java.lang.String KEY_IS_CLEARED
+    public static final java.lang.String KEY_IS_DELETED
+    public static final java.lang.String KEY_IS_FLAGGED
+    public static final java.lang.String KEY_IS_HIDDEN
+    public static final java.lang.String KEY_IS_HOLDING
+    public static final java.lang.String KEY_IS_MANUAL
+    public static final java.lang.String KEY_IS_PERSONAL
+    public static final java.lang.String KEY_IS_REIMBURSABLE
+    public static final java.lang.String KEY_IS_VOID
+    public static final java.lang.String KEY_JSON
+    public static final java.lang.String KEY_LABEL
+    public static final java.lang.String KEY_LAST_JOB
+    public static final java.lang.String KEY_LAST_UPDATE
+    public static final java.lang.String KEY_LOGIN_TOKEN
+    public static final java.lang.String KEY_MEMBER
+    public static final java.lang.String KEY_MEMBERS
+    public static final java.lang.String KEY_MEMBER_GUID
+    public static final java.lang.String KEY_MEMO
+    public static final java.lang.String KEY_MFA
+    public static final java.lang.String KEY_MIN_PAYMENT
+    public static final java.lang.String KEY_NAME
+    public static final java.lang.String KEY_OBJECTS
+    public static final java.lang.String KEY_ORG_BALANCE
+    public static final java.lang.String KEY_PARENT_GUID
+    public static final java.lang.String KEY_POPULARITY
+    public static final java.lang.String KEY_POSTED_DATE
+    public static final java.lang.String KEY_PROCESS_STATUS
+    public static final java.lang.String KEY_PROPERTY_TYPE
+    public static final java.lang.String KEY_RECORDS
+    public static final java.lang.String KEY_REFERENCE
+    public static final java.lang.String KEY_REVISION
+    public static final java.lang.String KEY_STATUS
+    public static final java.lang.String KEY_STATUS_CODE
+    public static final java.lang.String KEY_SYNC_TOKEN
+    public static final java.lang.String KEY_TAGS
+    public static final java.lang.String KEY_TITLE
+    public static final java.lang.String KEY_TRANSACTIONS
+    public static final java.lang.String KEY_TRANSACTION_TYPE
+    public static final java.lang.String KEY_UPDATED
+    public static final java.lang.String KEY_URL
+    public static final java.lang.String KEY_USER_CREATED
+    public static final java.lang.String KEY_USER_DATE
+    public static final java.lang.String KEY_USER_DESCRIPTION
+    public static final java.lang.String KEY_USER_GUID
+    public static final java.lang.String KEY_USERNAME
+    public static final java.lang.String KEY_USER_NAME
+    public static final java.lang.String BUSINESS
+    public static final java.lang.String BUSINESS_OBJECT
+    public static final java.lang.String INCOME
+    public static final java.lang.String PERSONAL
+    public static final java.lang.String UNCATEGORIZED
+    public static final int QUERY_LIMIT
+    public static final float STANDARD_DPI
+    public static final float LARGE_TABLET_SCALE
+    public static final float XHDPI_SCALE
+    public static final java.lang.String ORDER_ASC
+    public static final java.lang.String ORDER_DESC
+    public static final java.lang.String FIELD_DATE
+    public static final java.lang.String FIELD_TITLE
+    public static final java.lang.String FIELD_CATEGORY
+    public static final java.lang.String FIELD_AMOUNT
+    public static final java.lang.String QUERY_SUMMED_TRANSACTIONS
+    public static final java.lang.String QUERY_BOB_ID
+    public static final java.lang.String QUERY_BUSINESS_BASE_JOIN
+    public static final java.lang.String QUERY_TRANSACTIONS
+    public static final java.lang.String QUERY_DATE_TRANSACTIONS
+    public static final java.lang.String QUERY_TOP_SPENDING_CATEGORY
+    public static final java.lang.String QUERY_DATED_TRANSACTIONS
+    public static final java.lang.String QUERY_UNVIEWED_TRANSACTIONS
+    public static final java.lang.String QUERY_DAILY_TRANSACTIONS
+    public static final java.lang.String QUERY_MONTHLY_TRANSACTIONS
+    public static final java.lang.String QUERY_QUARTERLY_TRANSACTIONS
+    public static final java.lang.String QUERY_YEARLY_TRANSACTIONS
+    public static final java.lang.String VALUE_NULL
+    7:7:public Constant()
+com.saulpower.piechart.extra.Dynamics:
+    private static final int MAX_TIMESTEP
+com.saulpower.piechart.extra.PerformanceUtils
+com.saulpower.piechart.extra.UiUtils:
+    10:10:public UiUtils()
+    13:15:public static int getScreenWidth(android.app.Activity)
+    19:21:public static int getScreenHeight(android.app.Activity)
+    25:26:public static int getMinimumPanalWidth(android.app.Activity)
+    30:30:public static int getMinimumPanalHeight(android.app.Activity)
+    34:35:public static float getDensityRatio(android.content.Context)
+    46:47:public static float convertDpToPixel(float,android.content.Context)
+    59:62:public static int convertPixelsToDp(float,android.content.Context)
+    73:80:public static float[] getScreenMeasurements(android.content.Context)
+    88:88:public static float getScaledPixels(android.content.Context,float)
+com.saulpower.piechart.views.BasePieChartAdapter
+com.saulpower.piechart.views.CaretDrawable:
+    private static final int STROKE_WIDTH
+    41:41:public int getColor()
+    60:60:public float getCaretWidth()
+    64:67:public void setCaretWidth(float)
+    70:70:public float getCaretHeight()
+    74:77:public void setCaretHeight(float)
+    80:82:public void setCaretRotation(float)
+    85:85:public float getCaretRotation()
+com.saulpower.piechart.views.ExpandablePieChartView
+com.saulpower.piechart.views.ExpandablePieChartView$1
+com.saulpower.piechart.views.ExpandablePieChartView$2
+com.saulpower.piechart.views.ExpandablePieChartView$3
+com.saulpower.piechart.views.ExpandablePieChartView$4
+com.saulpower.piechart.views.ExpandablePieChartView$5
+com.saulpower.piechart.views.ExpandablePieChartView$6
+com.saulpower.piechart.views.ExpandablePieChartView$7
+com.saulpower.piechart.views.ExpandablePieChartView$8
+com.saulpower.piechart.views.ExpandablePieChartView$9
+com.saulpower.piechart.views.ExpandablePieChartView$AdapterDataSetObserver
+com.saulpower.piechart.views.ExpandablePieChartView$OnExpandablePieChartChangeListener
+com.saulpower.piechart.views.ExpandablePieChartView$OnExpandablePieChartInfoClickListener
+com.saulpower.piechart.views.InfoDrawable:
+    private float mOffsetX
+    41:41:public float getOffsetX()
+    45:46:public void setOffsetX(float)
+    49:49:public java.lang.String getTitle()
+    53:57:public void setTitle(java.lang.String)
+    60:60:public java.lang.String getAmount()
+    64:68:public void setAmount(java.lang.String)
+    71:71:public java.lang.String getSubTitle()
+    75:79:public void setSubTitle(java.lang.String)
+    82:84:public void setAmountColor(int)
+    111:137:public void animateTransition(java.lang.String,int,java.lang.String)
+    22:22:static synthetic com.saulpower.piechart.views.PieChartView access$0(com.saulpower.piechart.views.InfoDrawable)
+com.saulpower.piechart.views.InfoDrawable$1
+com.saulpower.piechart.views.PieChartView:
+    private static final int SUB_STROKE_WIDTH
+    private static final int INFO_STROKE_WIDTH
+    private static final int PIXELS_PER_SECOND
+    private static final float VELOCITY_TOLERANCE
+    private static final int INVALID_INDEX
+    private static final int INFO_INDEX
+    public static final int TOUCH_STATE_RESTING
+    private static final int TOUCH_STATE_CLICK
+    public static final int TOUCH_STATE_ROTATE
+    public static final int CHART_HIDDEN
+    public static final int CHART_SHOWING
+    public static final int CHART_INVALID
+    private static final float DEFAULT_SNAP_DEGREE
+    238:238:public boolean isChartHidden()
+    347:348:public void onPause()
+    412:419:public com.saulpower.piechart.views.PieSliceDrawable getSlice(int)
+    426:429:public void showInfo()
+    435:438:public void hideInfo()
+    996:999:public void hideChart()
+    1006:1009:public void showChart()
+    1081:1081:static synthetic void access$13(com.saulpower.piechart.views.PieChartView,boolean)
+com.saulpower.piechart.views.PieChartView$AdapterDataSetObserver:
+    1711:1712:public void clearSavedState()
+com.saulpower.piechart.views.PieChartView$DrawThread:
+    1373:1373:public boolean isRunning()
+    1377:1377:public boolean isPaused()
+    1391:1393:public void setInfoAnimator(com.saulpower.piechart.views.ThreadAnimator)
+    1400:1406:public void onPause()
+    1525:1545:private void cleanUp()
+    1569:1576:public void drawCache(android.graphics.Canvas)
+    1585:1586:public void doDraw(android.graphics.Canvas)
+com.saulpower.piechart.views.PieSliceDrawable:
+    41:41:public float getDegreeOffset()
+    49:49:public float getPercent()
+    66:68:public void setStokeWidth(float)
+    71:71:public float getStrokeWidth()
+com.saulpower.piechart.views.ThreadAnimator:
+    31:31:public long getDuration()
+    50:50:public static com.saulpower.piechart.views.ThreadAnimator ofInt(int,int)
+com.touchnvoteui.AddNewStudentActivity$ClassAvailableTask:
+    org.json.JSONArray jsonclasslist
+com.touchnvoteui.BuildConfig
+com.touchnvoteui.CloudEndpointUtils
+com.touchnvoteui.CloudEndpointUtils$1
+com.touchnvoteui.CloudEndpointUtils$2
+com.touchnvoteui.DisplayResultActivity:
+    private com.saulpower.piechart.views.PieChartView mChart
+com.touchnvoteui.GCMIntentService
+com.touchnvoteui.GCMIntentService$1
+com.touchnvoteui.InternetConnectivityCheck:
+    7:7:public InternetConnectivityCheck()
+com.touchnvoteui.R
+com.touchnvoteui.R$array
+com.touchnvoteui.R$attr
+com.touchnvoteui.R$color
+com.touchnvoteui.R$dimen
+com.touchnvoteui.R$drawable
+com.touchnvoteui.R$id
+com.touchnvoteui.R$layout
+com.touchnvoteui.R$menu
+com.touchnvoteui.R$string
+com.touchnvoteui.R$style
+com.touchnvoteui.SimpleDynamics
+com.touchnvoteui.TNVMainActivity:
+    public static final java.lang.String SERVICE_URL
+    private android.widget.ProgressBar pd
+com.touchnvoteui.TNVMainActivity$ClassAvailableTask:
+    org.json.JSONArray jsonclasslist
+com.touchnvoteui.TNVMainActivity$UserLoginTask:
+    private java.lang.String result1
+com.touchnvoteui.deviceinfoendpoint.Deviceinfoendpoint
+com.touchnvoteui.deviceinfoendpoint.Deviceinfoendpoint$Builder
+com.touchnvoteui.deviceinfoendpoint.Deviceinfoendpoint$GetDeviceInfo
+com.touchnvoteui.deviceinfoendpoint.Deviceinfoendpoint$InsertDeviceInfo
+com.touchnvoteui.deviceinfoendpoint.Deviceinfoendpoint$ListDeviceInfo
+com.touchnvoteui.deviceinfoendpoint.Deviceinfoendpoint$RemoveDeviceInfo
+com.touchnvoteui.deviceinfoendpoint.Deviceinfoendpoint$UpdateDeviceInfo
+com.touchnvoteui.deviceinfoendpoint.DeviceinfoendpointRequest
+com.touchnvoteui.deviceinfoendpoint.DeviceinfoendpointRequestInitializer
+com.touchnvoteui.deviceinfoendpoint.DeviceinfoendpointScopes
+com.touchnvoteui.deviceinfoendpoint.model.CollectionResponseDeviceInfo
+com.touchnvoteui.deviceinfoendpoint.model.DeviceInfo
+com.touchnvoteui.entities.securedloginendpoint.Securedloginendpoint
+com.touchnvoteui.entities.securedloginendpoint.Securedloginendpoint$Builder
+com.touchnvoteui.entities.securedloginendpoint.Securedloginendpoint$GetSecuredLogin
+com.touchnvoteui.entities.securedloginendpoint.Securedloginendpoint$InsertSecuredLogin
+com.touchnvoteui.entities.securedloginendpoint.Securedloginendpoint$ListSecuredLogin
+com.touchnvoteui.entities.securedloginendpoint.Securedloginendpoint$RemoveSecuredLogin
+com.touchnvoteui.entities.securedloginendpoint.Securedloginendpoint$UpdateSecuredLogin
+com.touchnvoteui.entities.securedloginendpoint.SecuredloginendpointRequest
+com.touchnvoteui.entities.securedloginendpoint.SecuredloginendpointRequestInitializer
+com.touchnvoteui.entities.securedloginendpoint.SecuredloginendpointScopes
+com.touchnvoteui.entities.securedloginendpoint.model.CollectionResponseSecuredLogin
+com.touchnvoteui.entities.securedloginendpoint.model.SecuredLogin
+com.touchnvoteui.entities.userdetailsendpoint.Userdetailsendpoint
+com.touchnvoteui.entities.userdetailsendpoint.Userdetailsendpoint$Builder
+com.touchnvoteui.entities.userdetailsendpoint.Userdetailsendpoint$GetUserDetails
+com.touchnvoteui.entities.userdetailsendpoint.Userdetailsendpoint$InsertUserDetails
+com.touchnvoteui.entities.userdetailsendpoint.Userdetailsendpoint$ListUserDetails
+com.touchnvoteui.entities.userdetailsendpoint.Userdetailsendpoint$RemoveUserDetails
+com.touchnvoteui.entities.userdetailsendpoint.Userdetailsendpoint$UpdateUserDetails
+com.touchnvoteui.entities.userdetailsendpoint.UserdetailsendpointRequest
+com.touchnvoteui.entities.userdetailsendpoint.UserdetailsendpointRequestInitializer
+com.touchnvoteui.entities.userdetailsendpoint.UserdetailsendpointScopes
+com.touchnvoteui.entities.userdetailsendpoint.model.CollectionResponseUserDetails
+com.touchnvoteui.entities.userdetailsendpoint.model.UserDetails
+com.touchnvoteui.entities.userdetailslistendpoint.Userdetailslistendpoint
+com.touchnvoteui.entities.userdetailslistendpoint.Userdetailslistendpoint$Builder
+com.touchnvoteui.entities.userdetailslistendpoint.Userdetailslistendpoint$GetUserDetailsList
+com.touchnvoteui.entities.userdetailslistendpoint.Userdetailslistendpoint$InsertUserDetailsList
+com.touchnvoteui.entities.userdetailslistendpoint.Userdetailslistendpoint$ListUserDetailsList
+com.touchnvoteui.entities.userdetailslistendpoint.Userdetailslistendpoint$RemoveUserDetailsList
+com.touchnvoteui.entities.userdetailslistendpoint.Userdetailslistendpoint$UpdateUserDetailsList
+com.touchnvoteui.entities.userdetailslistendpoint.UserdetailslistendpointRequest
+com.touchnvoteui.entities.userdetailslistendpoint.UserdetailslistendpointRequestInitializer
+com.touchnvoteui.entities.userdetailslistendpoint.UserdetailslistendpointScopes
+com.touchnvoteui.entities.userdetailslistendpoint.model.CollectionResponseUserDetailsList
+com.touchnvoteui.entities.userdetailslistendpoint.model.Key
+com.touchnvoteui.entities.userdetailslistendpoint.model.UserDetailsList
+com.touchnvoteui.generictype.Question:
+    34:35:public void setQuizTitle(java.lang.String)
+    40:41:public void setQuestion(java.lang.String)
+    46:47:public void setType(int)
+    52:53:public void setAnswers(java.util.List)
+    55:55:public java.util.List getCorrectAnswer()
+    58:59:public void setCorrectAnswer(java.util.List)
+    64:65:public void setCount(int)
+com.touchnvoteui.generictype.ValidateDate:
+    5:5:public ValidateDate()
+com.touchnvoteui.generictype.var
+com.touchnvoteui.messageEndpoint.MessageEndpoint
+com.touchnvoteui.messageEndpoint.MessageEndpoint$Builder
+com.touchnvoteui.messageEndpoint.MessageEndpoint$ListMessages
+com.touchnvoteui.messageEndpoint.MessageEndpoint$SendMessage
+com.touchnvoteui.messageEndpoint.MessageEndpointRequest
+com.touchnvoteui.messageEndpoint.MessageEndpointRequestInitializer
+com.touchnvoteui.messageEndpoint.MessageEndpointScopes
+com.touchnvoteui.messageEndpoint.model.CollectionResponseMessageData
+com.touchnvoteui.messageEndpoint.model.Key
+com.touchnvoteui.messageEndpoint.model.MessageData
+javax.annotation.CheckForNull
+javax.annotation.CheckForSigned
+javax.annotation.CheckReturnValue
+javax.annotation.Detainted
+javax.annotation.MatchesPattern
+javax.annotation.MatchesPattern$Checker
+javax.annotation.Nonnegative
+javax.annotation.Nonnegative$Checker
+javax.annotation.Nonnull
+javax.annotation.Nonnull$Checker
+javax.annotation.Nullable
+javax.annotation.OverridingMethodsMustInvokeSuper
+javax.annotation.ParametersAreNonnullByDefault
+javax.annotation.ParametersAreNullableByDefault
+javax.annotation.PropertyKey
+javax.annotation.RegEx
+javax.annotation.RegEx$Checker
+javax.annotation.Signed
+javax.annotation.Syntax
+javax.annotation.Tainted
+javax.annotation.Untainted
+javax.annotation.WillClose
+javax.annotation.WillCloseWhenClosed
+javax.annotation.WillNotClose
+javax.annotation.concurrent.GuardedBy
+javax.annotation.concurrent.Immutable
+javax.annotation.concurrent.NotThreadSafe
+javax.annotation.concurrent.ThreadSafe
+javax.annotation.meta.Exclusive
+javax.annotation.meta.Exhaustive
+javax.annotation.meta.TypeQualifier
+javax.annotation.meta.TypeQualifierDefault
+javax.annotation.meta.TypeQualifierNickname
+javax.annotation.meta.TypeQualifierValidator
+javax.annotation.meta.When
+org.codehaus.jackson.Base64Variant
+org.codehaus.jackson.Base64Variants
+org.codehaus.jackson.FormatSchema
+org.codehaus.jackson.JsonEncoding
+org.codehaus.jackson.JsonFactory
+org.codehaus.jackson.JsonGenerationException
+org.codehaus.jackson.JsonGenerator
+org.codehaus.jackson.JsonGenerator$Feature
+org.codehaus.jackson.JsonLocation
+org.codehaus.jackson.JsonNode
+org.codehaus.jackson.JsonParseException
+org.codehaus.jackson.JsonParser
+org.codehaus.jackson.JsonParser$1
+org.codehaus.jackson.JsonParser$Feature
+org.codehaus.jackson.JsonParser$NumberType
+org.codehaus.jackson.JsonProcessingException
+org.codehaus.jackson.JsonStreamContext
+org.codehaus.jackson.JsonToken
+org.codehaus.jackson.ObjectCodec
+org.codehaus.jackson.PrettyPrinter
+org.codehaus.jackson.SerializableString
+org.codehaus.jackson.Version
+org.codehaus.jackson.Versioned
+org.codehaus.jackson.annotate.JacksonAnnotation
+org.codehaus.jackson.annotate.JsonAnyGetter
+org.codehaus.jackson.annotate.JsonAnySetter
+org.codehaus.jackson.annotate.JsonAutoDetect
+org.codehaus.jackson.annotate.JsonAutoDetect$1
+org.codehaus.jackson.annotate.JsonAutoDetect$Visibility
+org.codehaus.jackson.annotate.JsonBackReference
+org.codehaus.jackson.annotate.JsonCreator
+org.codehaus.jackson.annotate.JsonGetter
+org.codehaus.jackson.annotate.JsonIgnore
+org.codehaus.jackson.annotate.JsonIgnoreProperties
+org.codehaus.jackson.annotate.JsonIgnoreType
+org.codehaus.jackson.annotate.JsonManagedReference
+org.codehaus.jackson.annotate.JsonMethod
+org.codehaus.jackson.annotate.JsonProperty
+org.codehaus.jackson.annotate.JsonPropertyOrder
+org.codehaus.jackson.annotate.JsonRawValue
+org.codehaus.jackson.annotate.JsonSetter
+org.codehaus.jackson.annotate.JsonSubTypes
+org.codehaus.jackson.annotate.JsonSubTypes$Type
+org.codehaus.jackson.annotate.JsonTypeInfo
+org.codehaus.jackson.annotate.JsonTypeInfo$As
+org.codehaus.jackson.annotate.JsonTypeInfo$Id
+org.codehaus.jackson.annotate.JsonTypeInfo$None
+org.codehaus.jackson.annotate.JsonTypeName
+org.codehaus.jackson.annotate.JsonUnwrapped
+org.codehaus.jackson.annotate.JsonValue
+org.codehaus.jackson.annotate.JsonWriteNullProperties
+org.codehaus.jackson.format.DataFormatDetector
+org.codehaus.jackson.format.DataFormatMatcher
+org.codehaus.jackson.format.InputAccessor
+org.codehaus.jackson.format.InputAccessor$Std
+org.codehaus.jackson.format.MatchStrength
+org.codehaus.jackson.impl.ByteSourceBootstrapper
+org.codehaus.jackson.impl.ByteSourceBootstrapper$1
+org.codehaus.jackson.impl.DefaultPrettyPrinter
+org.codehaus.jackson.impl.Indenter
+org.codehaus.jackson.impl.JsonGeneratorBase
+org.codehaus.jackson.impl.JsonGeneratorBase$1
+org.codehaus.jackson.impl.JsonNumericParserBase
+org.codehaus.jackson.impl.JsonParserBase
+org.codehaus.jackson.impl.JsonParserMinimalBase
+org.codehaus.jackson.impl.JsonParserMinimalBase$1
+org.codehaus.jackson.impl.JsonReadContext
+org.codehaus.jackson.impl.JsonWriteContext
+org.codehaus.jackson.impl.ReaderBasedParser
+org.codehaus.jackson.impl.ReaderBasedParser$1
+org.codehaus.jackson.impl.ReaderBasedParserBase
+org.codehaus.jackson.impl.StreamBasedParserBase
+org.codehaus.jackson.impl.Utf8Generator
+org.codehaus.jackson.impl.Utf8StreamParser
+org.codehaus.jackson.impl.Utf8StreamParser$1
+org.codehaus.jackson.impl.WriterBasedGenerator
+org.codehaus.jackson.io.BaseReader
+org.codehaus.jackson.io.CharacterEscapes
+org.codehaus.jackson.io.IOContext
+org.codehaus.jackson.io.InputDecorator
+org.codehaus.jackson.io.JsonStringEncoder
+org.codehaus.jackson.io.MergedStream
+org.codehaus.jackson.io.NumberInput
+org.codehaus.jackson.io.NumberOutput
+org.codehaus.jackson.io.OutputDecorator
+org.codehaus.jackson.io.SegmentedStringWriter
+org.codehaus.jackson.io.SerializedString
+org.codehaus.jackson.io.UTF32Reader
+org.codehaus.jackson.io.UTF8Writer
+org.codehaus.jackson.sym.BytesToNameCanonicalizer
+org.codehaus.jackson.sym.BytesToNameCanonicalizer$Bucket
+org.codehaus.jackson.sym.BytesToNameCanonicalizer$TableInfo
+org.codehaus.jackson.sym.CharsToNameCanonicalizer
+org.codehaus.jackson.sym.CharsToNameCanonicalizer$Bucket
+org.codehaus.jackson.sym.Name
+org.codehaus.jackson.sym.Name1
+org.codehaus.jackson.sym.Name2
+org.codehaus.jackson.sym.Name3
+org.codehaus.jackson.sym.NameN
+org.codehaus.jackson.type.JavaType
+org.codehaus.jackson.type.TypeReference
+org.codehaus.jackson.util.BufferRecycler
+org.codehaus.jackson.util.BufferRecycler$ByteBufferType
+org.codehaus.jackson.util.BufferRecycler$CharBufferType
+org.codehaus.jackson.util.ByteArrayBuilder
+org.codehaus.jackson.util.CharTypes
+org.codehaus.jackson.util.DefaultPrettyPrinter
+org.codehaus.jackson.util.DefaultPrettyPrinter$FixedSpaceIndenter
+org.codehaus.jackson.util.DefaultPrettyPrinter$Lf2SpacesIndenter
+org.codehaus.jackson.util.DefaultPrettyPrinter$NopIndenter
+org.codehaus.jackson.util.InternCache
+org.codehaus.jackson.util.JsonGeneratorDelegate
+org.codehaus.jackson.util.JsonParserDelegate
+org.codehaus.jackson.util.JsonParserSequence
+org.codehaus.jackson.util.MinimalPrettyPrinter
+org.codehaus.jackson.util.TextBuffer
+org.codehaus.jackson.util.TokenBuffer
+org.codehaus.jackson.util.TokenBuffer$1
+org.codehaus.jackson.util.TokenBuffer$Parser
+org.codehaus.jackson.util.TokenBuffer$Segment
+org.codehaus.jackson.util.VersionUtil

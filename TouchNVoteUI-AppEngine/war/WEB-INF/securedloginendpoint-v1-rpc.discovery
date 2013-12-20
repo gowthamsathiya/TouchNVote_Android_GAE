@@ -1,0 +1,220 @@
+{
+ "kind": "discovery#rpcDescription",
+ "etag": "\"doS0mIKix6_L3_LoT-sZZjofha4/pDam9zgCWL4BG10y9RPSB8Tq8Nc\"",
+ "discoveryVersion": "v1",
+ "id": "securedloginendpoint:v1",
+ "name": "securedloginendpoint",
+ "version": "v1",
+ "description": "This is an API",
+ "ownerDomain": "touchnvoteui.com",
+ "ownerName": "touchnvoteui.com",
+ "packagePath": "entities",
+ "icons": {
+  "x16": "http://www.google.com/images/icons/product/search-16.gif",
+  "x32": "http://www.google.com/images/icons/product/search-32.gif"
+ },
+ "protocol": "rpc",
+ "rootUrl": "https://touchnvote.appspot.com/_ah/api/",
+ "rpcUrl": "https://touchnvote.appspot.com/_ah/api/rpc",
+ "rpcPath": "/_ah/api/rpc",
+ "parameters": {
+  "alt": {
+   "type": "string",
+   "description": "Data format for the response.",
+   "default": "json",
+   "enum": [
+    "json"
+   ],
+   "enumDescriptions": [
+    "Responses with Content-Type of application/json"
+   ],
+   "location": "query"
+  },
+  "fields": {
+   "type": "string",
+   "description": "Selector specifying which fields to include in a partial response.",
+   "location": "query"
+  },
+  "key": {
+   "type": "string",
+   "description": "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token.",
+   "location": "query"
+  },
+  "oauth_token": {
+   "type": "string",
+   "description": "OAuth 2.0 token for the current user.",
+   "location": "query"
+  },
+  "prettyPrint": {
+   "type": "boolean",
+   "description": "Returns response with indentations and line breaks.",
+   "default": "true",
+   "location": "query"
+  },
+  "quotaUser": {
+   "type": "string",
+   "description": "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.",
+   "location": "query"
+  },
+  "userIp": {
+   "type": "string",
+   "description": "IP address of the site where the request originates. Use this if you want to enforce per-user limits.",
+   "location": "query"
+  }
+ },
+ "auth": {
+  "oauth2": {
+   "scopes": {
+    "https://www.googleapis.com/auth/userinfo.email": {
+     "description": "View your email address"
+    }
+   }
+  }
+ },
+ "schemas": {
+  "CollectionResponse_SecuredLogin": {
+   "id": "CollectionResponse_SecuredLogin",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "SecuredLogin"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "SecuredLogin": {
+   "id": "SecuredLogin",
+   "type": "object",
+   "properties": {
+    "firstName": {
+     "type": "string"
+    },
+    "lastName": {
+     "type": "string"
+    },
+    "netID": {
+     "type": "string"
+    },
+    "password": {
+     "type": "string"
+    },
+    "securityQuestion1": {
+     "type": "string"
+    },
+    "securityQuestion2": {
+     "type": "string"
+    },
+    "securityQuestion3": {
+     "type": "string"
+    },
+    "securityQuestionAnswer1": {
+     "type": "string"
+    },
+    "securityQuestionAnswer2": {
+     "type": "string"
+    },
+    "securityQuestionAnswer3": {
+     "type": "string"
+    },
+    "type": {
+     "type": "integer",
+     "format": "int32"
+    }
+   }
+  }
+ },
+ "methods": {
+  "securedloginendpoint.getSecuredLogin": {
+   "id": "securedloginendpoint.getSecuredLogin",
+   "allowGet": true,
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "returns": {
+    "$ref": "SecuredLogin"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "securedloginendpoint.insertSecuredLogin": {
+   "id": "securedloginendpoint.insertSecuredLogin",
+   "parameters": {
+    "resource": {
+     "$ref": "SecuredLogin"
+    }
+   },
+   "parameterOrder": [
+    "resource"
+   ],
+   "returns": {
+    "$ref": "SecuredLogin"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "securedloginendpoint.listSecuredLogin": {
+   "id": "securedloginendpoint.listSecuredLogin",
+   "allowGet": true,
+   "parameters": {
+    "cursor": {
+     "type": "string"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32"
+    }
+   },
+   "returns": {
+    "$ref": "CollectionResponse_SecuredLogin"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "securedloginendpoint.removeSecuredLogin": {
+   "id": "securedloginendpoint.removeSecuredLogin",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "securedloginendpoint.updateSecuredLogin": {
+   "id": "securedloginendpoint.updateSecuredLogin",
+   "parameters": {
+    "resource": {
+     "$ref": "SecuredLogin"
+    }
+   },
+   "parameterOrder": [
+    "resource"
+   ],
+   "returns": {
+    "$ref": "SecuredLogin"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  }
+ }
+}

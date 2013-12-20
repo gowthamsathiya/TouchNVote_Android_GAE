@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PostQuizActivity" >
+
+    <TextView
+        android:id="@+id/postQuizTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/classListSpinner"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/postquiztitle" />
+
+    <Spinner
+        android:id="@+id/classListSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postQuizTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <Spinner
+        android:id="@+id/monthClassSpinner"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dateEditText"
+        android:layout_toRightOf="@+id/dateEditText"
+        android:entries="@array/monthlist" />
+
+    <EditText
+        android:id="@+id/dateEditText"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/classListSpinner"
+        android:layout_below="@+id/classListSpinner"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:maxLength="2"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/yearClassSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/monthClassSpinner"
+        android:layout_toRightOf="@+id/monthClassSpinner"
+        android:entries="@array/yearlist" />
+
+    <TextView
+        android:id="@+id/classTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dateEditText"
+        android:layout_below="@+id/dateEditText"
+        android:layout_marginTop="46dp"
+        android:text="@string/classtitle" />
+
+    <EditText
+        android:id="@+id/classTitleEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/classTitleTextView"
+        android:layout_alignLeft="@+id/postQuizTextView"
+        android:ems="10"
+        android:maxLength="15"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/addClassQuizButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/classTitleEditText"
+        android:layout_below="@+id/classTitleEditText"
+        android:layout_marginTop="34dp"
+        android:text="@string/addquiz" />
+
+</RelativeLayout>

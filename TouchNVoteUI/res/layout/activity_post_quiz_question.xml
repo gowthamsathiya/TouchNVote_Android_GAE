@@ -1,0 +1,199 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="690dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <TextView
+            android:id="@+id/classTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/testtitle" />
+
+        <RadioGroup
+            android:id="@+id/answerTypeRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/answerTypeTextView"
+            android:layout_below="@+id/answerTypeTextView"
+            android:layout_marginTop="18dp" >
+
+            <RadioButton
+                android:id="@+id/answertTypeRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/radiotype" />
+
+            <RadioButton
+                android:id="@+id/answerTypeCombo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/combotype" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/answerEditText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/option3CheckBox"
+            android:layout_alignLeft="@+id/answerEditText2"
+            android:ems="10"
+            android:maxLength="20"
+            android:inputType="text"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/answerEditText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/option4CheckBox"
+            android:layout_alignLeft="@+id/answerEditText3"
+            android:ems="10"
+            android:maxLength="20"
+            android:inputType="text"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:id="@+id/option2CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/option1CheckBox"
+            android:layout_below="@+id/answerEditText1"
+            android:layout_marginTop="19dp" />
+
+        <CheckBox
+            android:id="@+id/option3CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/option2CheckBox"
+            android:layout_below="@+id/answerEditText2"
+            android:layout_marginTop="22dp"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:id="@+id/option4CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/option3CheckBox"
+            android:layout_below="@+id/option3CheckBox"
+            android:layout_marginTop="24dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/plusButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/answerTextView"
+            android:layout_alignBottom="@+id/answerTextView"
+            android:layout_alignRight="@+id/questionEditText"
+            android:text="@string/plus" />
+
+        <EditText
+            android:id="@+id/answerEditText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/option2CheckBox"
+            android:layout_toRightOf="@+id/answerTextView"
+            android:ems="10"
+            android:maxLength="20"
+            android:inputType="text" />
+
+        <CheckBox
+            android:id="@+id/option1CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/option2CheckBox"
+            android:layout_alignRight="@+id/classTitleTextView" />
+
+        <TextView
+            android:id="@+id/selectedClassTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/classTitleTextView"
+            android:layout_below="@+id/classTitleTextView"
+            android:layout_marginTop="18dp"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/postQuesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/selectedClassTextView"
+            android:layout_below="@+id/selectedClassTextView"
+            android:layout_marginTop="19dp"
+            android:text="@string/question" />
+
+        <EditText
+            android:id="@+id/questionEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/postQuesTextView"
+            android:layout_below="@+id/postQuesTextView"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:maxLength="40"
+            android:inputType="text"
+            android:width="300dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/answerTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/questionEditText"
+            android:layout_below="@+id/questionEditText"
+            android:layout_marginTop="25dp"
+            android:text="@string/answertype" />
+
+        <TextView
+            android:id="@+id/answerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/answerTypeRadioGroup"
+            android:layout_below="@+id/answerTypeRadioGroup"
+            android:layout_marginTop="32dp"
+            android:text="@string/answer" />
+
+        <EditText
+            android:id="@+id/answerEditText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plusButton"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/answerTextView"
+            android:ems="10"
+            android:maxLength="20"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/postQuizButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/answerEditText4"
+            android:layout_below="@+id/answerEditText4"
+            android:layout_marginTop="30dp"
+            android:text="@string/postquestion" />
+
+        <Button
+            android:id="@+id/addQuestionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/postQuizButton"
+            android:layout_alignBottom="@+id/postQuizButton"
+            android:layout_alignRight="@+id/answerTypeRadioGroup"
+            android:text="@string/plusquestion" />
+
+    </RelativeLayout>
+
+</ScrollView>
